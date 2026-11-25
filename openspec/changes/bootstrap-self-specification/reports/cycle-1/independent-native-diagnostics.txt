@@ -1,0 +1,217 @@
+TAP version 13
+# NATIVE CHILD STDOUT
+#   lidr-specboot
+#   Augmented Spec-driven development powered by OpenSpec
+#   Target: C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk
+#   Files copied  118
+#   Symlinks      0
+#   Skipped       0
+#   Errors (36):
+#     ! CLAUDE.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\CLAUDE.md'
+#     ! AGENTS.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\AGENTS.md'
+#     ! codex.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\codex.md'
+#     ! GEMINI.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\GEMINI.md'
+#     ! .claude/agents/backend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\backend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\agents\\backend-developer.md'
+#     ! .claude/agents/frontend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\frontend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\agents\\frontend-developer.md'
+#     ! .claude/agents/product-strategy-analyst.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\product-strategy-analyst.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\agents\\product-strategy-analyst.md'
+#     ! .claude/skills/code-auditing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\code-auditing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\code-auditing'
+#     ! .claude/skills/commit: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\commit' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\commit'
+#     ! .claude/skills/enrich-us: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\enrich-us' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\enrich-us'
+#     ! .claude/skills/explain: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\explain' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\explain'
+#     ! .claude/skills/factory: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\factory' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\factory'
+#     ! .claude/skills/meta-prompt: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\meta-prompt' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\meta-prompt'
+#     ! .claude/skills/mutation-testing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\mutation-testing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\mutation-testing'
+#     ! .claude/skills/playwright-qa-scenarios: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-qa-scenarios' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\playwright-qa-scenarios'
+#     ! .claude/skills/playwright-skill: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-skill' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\playwright-skill'
+#     ! .claude/skills/quick-change: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\quick-change' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\quick-change'
+#     ! .claude/skills/update-docs: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\update-docs' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\update-docs'
+#     ! .claude/skills/using-git-worktrees: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\using-git-worktrees' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\using-git-worktrees'
+#     ! .claude/skills/writing-skills: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\writing-skills' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.claude\\skills\\writing-skills'
+#     ! .cursor/agents/backend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\backend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\agents\\backend-developer.md'
+#     ! .cursor/agents/frontend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\frontend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\agents\\frontend-developer.md'
+#     ! .cursor/agents/product-strategy-analyst.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\product-strategy-analyst.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\agents\\product-strategy-analyst.md'
+#     ! .cursor/skills/code-auditing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\code-auditing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\code-auditing'
+#     ! .cursor/skills/commit: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\commit' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\commit'
+#     ! .cursor/skills/enrich-us: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\enrich-us' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\enrich-us'
+#     ! .cursor/skills/explain: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\explain' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\explain'
+#     ! .cursor/skills/factory: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\factory' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\factory'
+#     ! .cursor/skills/meta-prompt: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\meta-prompt' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\meta-prompt'
+#     ! .cursor/skills/mutation-testing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\mutation-testing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\mutation-testing'
+#     ! .cursor/skills/playwright-qa-scenarios: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-qa-scenarios' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\playwright-qa-scenarios'
+#     ! .cursor/skills/playwright-skill: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-skill' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\playwright-skill'
+#     ! .cursor/skills/quick-change: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\quick-change' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\quick-change'
+#     ! .cursor/skills/update-docs: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\update-docs' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\update-docs'
+#     ! .cursor/skills/using-git-worktrees: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\using-git-worktrees' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\using-git-worktrees'
+#     ! .cursor/skills/writing-skills: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\writing-skills' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk\\.cursor\\skills\\writing-skills'
+#   Next steps:
+#   1. Update docs/ to match your project (stack, API, data model)
+#   2. openspec init
+#   3. /enrich-us  ->  /ff  ->  /apply
+# NATIVE CHILD STDOUT
+#   lidr-specboot
+#   Augmented Spec-driven development powered by OpenSpec
+#   Target: C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R
+#   Files copied  118
+#   Symlinks      0
+#   Skipped       0
+#   Errors (36):
+#     ! CLAUDE.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\CLAUDE.md'
+#     ! AGENTS.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\AGENTS.md'
+#     ! codex.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\codex.md'
+#     ! GEMINI.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\GEMINI.md'
+#     ! .claude/agents/backend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\backend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\agents\\backend-developer.md'
+#     ! .claude/agents/frontend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\frontend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\agents\\frontend-developer.md'
+#     ! .claude/agents/product-strategy-analyst.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\product-strategy-analyst.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\agents\\product-strategy-analyst.md'
+#     ! .claude/skills/code-auditing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\code-auditing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\code-auditing'
+#     ! .claude/skills/commit: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\commit' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\commit'
+#     ! .claude/skills/enrich-us: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\enrich-us' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\enrich-us'
+#     ! .claude/skills/explain: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\explain' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\explain'
+#     ! .claude/skills/factory: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\factory' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\factory'
+#     ! .claude/skills/meta-prompt: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\meta-prompt' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\meta-prompt'
+#     ! .claude/skills/mutation-testing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\mutation-testing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\mutation-testing'
+#     ! .claude/skills/playwright-qa-scenarios: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-qa-scenarios' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\playwright-qa-scenarios'
+#     ! .claude/skills/playwright-skill: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-skill' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\playwright-skill'
+#     ! .claude/skills/quick-change: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\quick-change' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\quick-change'
+#     ! .claude/skills/update-docs: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\update-docs' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\update-docs'
+#     ! .claude/skills/using-git-worktrees: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\using-git-worktrees' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\using-git-worktrees'
+#     ! .claude/skills/writing-skills: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\writing-skills' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.claude\\skills\\writing-skills'
+#     ! .cursor/agents/backend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\backend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\agents\\backend-developer.md'
+#     ! .cursor/agents/frontend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\frontend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\agents\\frontend-developer.md'
+#     ! .cursor/agents/product-strategy-analyst.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\product-strategy-analyst.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\agents\\product-strategy-analyst.md'
+#     ! .cursor/skills/code-auditing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\code-auditing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\code-auditing'
+#     ! .cursor/skills/commit: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\commit' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\commit'
+#     ! .cursor/skills/enrich-us: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\enrich-us' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\enrich-us'
+#     ! .cursor/skills/explain: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\explain' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\explain'
+#     ! .cursor/skills/factory: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\factory' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\factory'
+#     ! .cursor/skills/meta-prompt: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\meta-prompt' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\meta-prompt'
+#     ! .cursor/skills/mutation-testing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\mutation-testing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\mutation-testing'
+#     ! .cursor/skills/playwright-qa-scenarios: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-qa-scenarios' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\playwright-qa-scenarios'
+#     ! .cursor/skills/playwright-skill: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-skill' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\playwright-skill'
+#     ! .cursor/skills/quick-change: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\quick-change' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\quick-change'
+#     ! .cursor/skills/update-docs: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\update-docs' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\update-docs'
+#     ! .cursor/skills/using-git-worktrees: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\using-git-worktrees' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\using-git-worktrees'
+#     ! .cursor/skills/writing-skills: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\writing-skills' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-OsQA9R\\.cursor\\skills\\writing-skills'
+#   Next steps:
+#   1. Update docs/ to match your project (stack, API, data model)
+#   2. openspec init
+#   3. /enrich-us  ->  /ff  ->  /apply
+# NATIVE CHILD STDOUT
+#   lidr-specboot
+#   Augmented Spec-driven development powered by OpenSpec
+#   Target: C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik
+#   Files copied  117
+#   Symlinks      0
+#   Skipped       1
+#   Errors (36):
+#     ! CLAUDE.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\CLAUDE.md'
+#     ! AGENTS.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\AGENTS.md'
+#     ! codex.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\codex.md'
+#     ! GEMINI.md: EPERM: operation not permitted, symlink 'docs\\base-standards.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\GEMINI.md'
+#     ! .claude/agents/backend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\backend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\agents\\backend-developer.md'
+#     ! .claude/agents/frontend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\frontend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\agents\\frontend-developer.md'
+#     ! .claude/agents/product-strategy-analyst.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\product-strategy-analyst.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\agents\\product-strategy-analyst.md'
+#     ! .claude/skills/code-auditing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\code-auditing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\code-auditing'
+#     ! .claude/skills/commit: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\commit' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\commit'
+#     ! .claude/skills/enrich-us: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\enrich-us' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\enrich-us'
+#     ! .claude/skills/explain: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\explain' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\explain'
+#     ! .claude/skills/factory: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\factory' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\factory'
+#     ! .claude/skills/meta-prompt: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\meta-prompt' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\meta-prompt'
+#     ! .claude/skills/mutation-testing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\mutation-testing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\mutation-testing'
+#     ! .claude/skills/playwright-qa-scenarios: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-qa-scenarios' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\playwright-qa-scenarios'
+#     ! .claude/skills/playwright-skill: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-skill' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\playwright-skill'
+#     ! .claude/skills/quick-change: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\quick-change' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\quick-change'
+#     ! .claude/skills/update-docs: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\update-docs' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\update-docs'
+#     ! .claude/skills/using-git-worktrees: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\using-git-worktrees' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\using-git-worktrees'
+#     ! .claude/skills/writing-skills: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\writing-skills' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.claude\\skills\\writing-skills'
+#     ! .cursor/agents/backend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\backend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\agents\\backend-developer.md'
+#     ! .cursor/agents/frontend-developer.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\frontend-developer.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\agents\\frontend-developer.md'
+#     ! .cursor/agents/product-strategy-analyst.md: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\agents\\product-strategy-analyst.md' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\agents\\product-strategy-analyst.md'
+#     ! .cursor/skills/code-auditing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\code-auditing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\code-auditing'
+#     ! .cursor/skills/commit: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\commit' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\commit'
+#     ! .cursor/skills/enrich-us: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\enrich-us' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\enrich-us'
+#     ! .cursor/skills/explain: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\explain' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\explain'
+#     ! .cursor/skills/factory: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\factory' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\factory'
+#     ! .cursor/skills/meta-prompt: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\meta-prompt' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\meta-prompt'
+#     ! .cursor/skills/mutation-testing: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\mutation-testing' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\mutation-testing'
+#     ! .cursor/skills/playwright-qa-scenarios: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-qa-scenarios' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\playwright-qa-scenarios'
+#     ! .cursor/skills/playwright-skill: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\playwright-skill' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\playwright-skill'
+#     ! .cursor/skills/quick-change: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\quick-change' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\quick-change'
+#     ! .cursor/skills/update-docs: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\update-docs' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\update-docs'
+#     ! .cursor/skills/using-git-worktrees: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\using-git-worktrees' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\using-git-worktrees'
+#     ! .cursor/skills/writing-skills: EPERM: operation not permitted, symlink '..\\..\\ai-specs\\skills\\writing-skills' -> 'C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik\\.cursor\\skills\\writing-skills'
+#   Next steps:
+#   1. Update docs/ to match your project (stack, API, data model)
+#   2. openspec init
+#   3. /enrich-us  ->  /ff  ->  /apply
+# Subtest: T03: clean explicit install copies template and creates correct links, not self-specs
+not ok 1 - T03: clean explicit install copies template and creates correct links, not self-specs
+  ---
+  duration_ms: 445.7748
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\tests\\self-spec.test.cjs:41:1'
+  failureType: 'testCodeFailure'
+  error: 'Command failed: C:\\Program Files\\nodejs\\node.exe C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\packages\\specboot\\bin\\init.js C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-YXUFwk'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    genericNodeError (node:internal/errors:985:15)
+    wrappedFn (node:internal/errors:539:14)
+    checkExecSyncError (node:child_process:925:11)
+    execFileSync (node:child_process:961:15)
+    cp.execFileSync (C:\Users\jjara\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\Temp\specboot-diagnostics-__eh7z2f\report-child.cjs:1:106)
+    install (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:21:10)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:42:15
+    temporary (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:17:9)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:41:101)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+  ...
+# Subtest: T04: default install uses cwd
+not ok 2 - T04: default install uses cwd
+  ---
+  duration_ms: 426.1859
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\tests\\self-spec.test.cjs:55:1'
+  failureType: 'testCodeFailure'
+  error: 'Command failed: C:\\Program Files\\nodejs\\node.exe C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\packages\\specboot\\bin\\init.js'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    genericNodeError (node:internal/errors:985:15)
+    wrappedFn (node:internal/errors:539:14)
+    checkExecSyncError (node:child_process:925:11)
+    execFileSync (node:child_process:961:15)
+    cp.execFileSync (C:\Users\jjara\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\Temp\specboot-diagnostics-__eh7z2f\report-child.cjs:1:106)
+    install (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:21:10)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:55:64
+    temporary (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:17:9)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:55:45)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+  ...
+# Subtest: T05: existing file remains intact and repeat does not copy files
+not ok 3 - T05: existing file remains intact and repeat does not copy files
+  ---
+  duration_ms: 445.0986
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\tests\\self-spec.test.cjs:56:1'
+  failureType: 'testCodeFailure'
+  error: 'Command failed: C:\\Program Files\\nodejs\\node.exe C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\packages\\specboot\\bin\\init.js C:\\Users\\jjara\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\\Temp\\specboot-self-RRI3Ik'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    genericNodeError (node:internal/errors:985:15)
+    wrappedFn (node:internal/errors:539:14)
+    checkExecSyncError (node:child_process:925:11)
+    execFileSync (node:child_process:961:15)
+    cp.execFileSync (C:\Users\jjara\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{d6a40034-4065-47f8-a62b-ebdcde72fef6}\Temp\specboot-diagnostics-__eh7z2f\report-child.cjs:1:106)
+    install (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:21:10)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:58:44
+    temporary (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:17:9)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\self-spec.test.cjs:56:80)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 0
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1465.8457

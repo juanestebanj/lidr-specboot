@@ -7,6 +7,21 @@ alwaysApply: true
 
 When creating or updating `tasks.md` artifacts in OpenSpec changes, you MUST:
 
+## Source self-maintenance QA profile (precedence)
+
+For changes to Specboot itself in a checkout with `openspec/self-specification.md`, read the repository config and baseline first. The following profile supersedes the generic application-specific numbered checklist and report templates below; customer application workflows retain their existing rules.
+
+| Surface | Required evidence |
+| --- | --- |
+| Automated tests | Actual targeted and broader offline test results, or a documented blocker; no fabricated pass |
+| Filesystem / CLI | Disposable-target execution and relevant negative cases when affected |
+| Database | Required if affected; otherwise record N/A with reason |
+| HTTP API | Required if affected; otherwise record N/A with reason |
+| Browser UI | Required if affected; otherwise record N/A with reason |
+| Documentation | Updated affected sources and traceability |
+
+Record each surface and reason in the change verification report. Do not create fictional database, curl or Playwright reports for unaffected surfaces. Mutation/adversarial checks apply to changed executable logic. `tasks.md` contains implementation work only; keep independent review, final verification, maintainer acceptance and separately authorized archival in `acceptance.md`. A missing tool or review is a blocker, not a pass.
+
 ## 1. Read openspec/config.yaml First
 
 **BEFORE** creating or updating any `tasks.md` file, you MUST read `openspec/config.yaml` to understand:

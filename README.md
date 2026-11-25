@@ -1,3 +1,5 @@
+> **Maintaining Specboot itself:** Start with [SELF-MAINTENANCE.md](SELF-MAINTENANCE.md). Canonical sources generate the customer template; the source repository now has its own proposed SDD contracts, self-checks and Linux CI. Customer adoption instructions below remain separate.
+
 # Specboot: Augmented Spec-driven development
 
 ![Specboot](https://drive.google.com/uc?export=view&id=1yic8hwSzSyQE6Zmf6__YNBcBvqiHMGEr)
@@ -66,7 +68,7 @@ The agent will:
 - Install and initialize OpenSpec (if needed)
 - Import this repository's `docs/` and `ai-specs/`
 - Update your OpenSpec config context (`config.yml` or `openspec/config.yaml`)
-- Store these onboarding instructions as `ai-specs/specboot-instructions.md` (so your project README can remain yours)
+- Store the dedicated customer onboarding instructions as `ai-specs/specboot-instructions.md` (so your project README can remain yours)
 
 ### 1) Install and Initialize OpenSpec
 
@@ -91,12 +93,14 @@ openspec init
 
 ### 2) Import Into Your Project
 
-Copy this repository into your project first, so the `docs/` and `ai-specs/` paths already exist when you configure OpenSpec:
+Copy only the reusable Specboot files into your project first, so the `docs/` and `ai-specs/` paths already exist when you configure OpenSpec. Keep the source repository’s `openspec/`, `tests/`, and `packages/` out of customer projects:
 
 ```bash
-# Clone or copy this repository into your project (`-n`: do not overwrite existing files so you keep project's original README)
-cp -rn lidr-specboot/* your-project/
+# Import only reusable paths; preserve existing customer files.
+node lidr-specboot/scripts/manual-import.cjs your-project
 ```
+
+The source importer requires a local source checkout and Node.js 18+. It refuses conflicting onboarding files or symlinks; resolve them explicitly before retrying. It does not copy source-only specs, tests, scripts or packages.
 
 Alternative for step 2 (Claude Code users):
 
@@ -394,3 +398,17 @@ Additional inspiration/source acknowledgements:
 **Made with 🤖 by the LIDR community**
 
 For questions, issues, or suggestions, visit [LIDR.co](https://lidr.co/ia-devs)
+
+## Specboot develops itself with OpenSpec
+
+This source repository has a proposed [self-specification](openspec/self-specification.md), five [baseline capabilities](openspec/specs/) and an [active bootstrap change](openspec/changes/bootstrap-self-specification/). These describe Specboot itself, not the example customer application. Use the same spec-first workflow for changes to the installer, reusable knowledge and engineering process.
+
+Run the focused offline verification from the repository root: `node --test tests/self-spec.test.cjs`. Independent review and official OpenSpec validation remain pending. The NPM customer template is unchanged.
+
+## Proposed self-improvement cycle 1
+
+Read openspec/changes/bootstrap-self-specification/self-improvement-plan.md for
+a bounded specification-first repair of installer process status. See the
+reports/cycle-1 directory beside that plan for evidence and current acceptance
+gates. This candidate changes the packaged executable; it is not an accepted
+release and does not reconcile the source/template guidance differences.

@@ -1,0 +1,616 @@
+[
+  {
+    "id": "@lidr/lidr-specboot@0.1.0",
+    "name": "@lidr/lidr-specboot",
+    "version": "0.1.0",
+    "size": 582723,
+    "unpackedSize": 2404630,
+    "shasum": "f7fd5879ef8c9f97984c0fa7ec22acfb9e9109e3",
+    "integrity": "sha512-2gf2JGUU4L6AN1p41NwoZcfD820xmlHgrI5JX5TStdvBlr1vsSlANqGPF3QDv5vZOgIK24O/YOop1BhKeUZHEw==",
+    "filename": "lidr-lidr-specboot-0.1.0.tgz",
+    "files": [
+      {
+        "path": "bin/init.js",
+        "size": 2862,
+        "mode": 493
+      },
+      {
+        "path": "package.json",
+        "size": 608,
+        "mode": 420
+      },
+      {
+        "path": "template/.cursor/rules/use-base-rules.mdc",
+        "size": 1747,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/agents/backend-developer.md",
+        "size": 10539,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/agents/frontend-developer.md",
+        "size": 10036,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/agents/product-strategy-analyst.md",
+        "size": 4494,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/scripts/code_review.sh",
+        "size": 926,
+        "mode": 493
+      },
+      {
+        "path": "template/ai-specs/skills/code-auditing/references/audit-methodology.md",
+        "size": 10301,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/code-auditing/references/dead-code-methodology.md",
+        "size": 6211,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/code-auditing/SKILL.md",
+        "size": 4805,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/commit/SKILL.md",
+        "size": 11359,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/enrich-us/SKILL.md",
+        "size": 4972,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/explain/SKILL.md",
+        "size": 5399,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/factory/references/parallel-tasks.md",
+        "size": 4298,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/factory/references/portal-branching-process.md",
+        "size": 10103,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/factory/SKILL.md",
+        "size": 27325,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/meta-prompt/SKILL.md",
+        "size": 631,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/mutation-testing/SKILL.md",
+        "size": 8532,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-qa-scenarios/assets/scenario-catalog-template.md",
+        "size": 3025,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-qa-scenarios/examples.md",
+        "size": 4123,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-qa-scenarios/references/e2e-suite-conventions.md",
+        "size": 6656,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-qa-scenarios/references/edge-case-catalog.md",
+        "size": 4603,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-qa-scenarios/SKILL.md",
+        "size": 14923,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/ci-github-actions.md",
+        "size": 18212,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/ci-gitlab.md",
+        "size": 11050,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/ci-other.md",
+        "size": 15439,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/docker-and-containers.md",
+        "size": 14066,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/global-setup-teardown.md",
+        "size": 17160,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/parallel-and-sharding.md",
+        "size": 16269,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/projects-and-dependencies.md",
+        "size": 17794,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/reporting-and-artifacts.md",
+        "size": 19794,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/SKILL.md",
+        "size": 2126,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/ci/test-coverage.md",
+        "size": 14103,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/accessibility.md",
+        "size": 56191,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/angular.md",
+        "size": 40190,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/api-testing.md",
+        "size": 52234,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/assertions-and-waiting.md",
+        "size": 28927,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/auth-flows.md",
+        "size": 36327,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/authentication.md",
+        "size": 49726,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/browser-apis.md",
+        "size": 24622,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/browser-extensions.md",
+        "size": 13632,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/canvas-and-webgl.md",
+        "size": 19024,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/clock-and-time-mocking.md",
+        "size": 18371,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/common-pitfalls.md",
+        "size": 44980,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/component-testing.md",
+        "size": 45300,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/configuration.md",
+        "size": 22336,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/crud-testing.md",
+        "size": 32073,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/debugging.md",
+        "size": 29829,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/drag-and-drop.md",
+        "size": 32377,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/dynamic-test-selection.md",
+        "size": 10216,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/electron-testing.md",
+        "size": 21210,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/error-and-edge-cases.md",
+        "size": 40378,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/error-index.md",
+        "size": 59843,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/file-operations.md",
+        "size": 25652,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/file-upload-download.md",
+        "size": 32274,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/fixtures-and-hooks.md",
+        "size": 34456,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/flaky-tests.md",
+        "size": 33913,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/forms-and-validation.md",
+        "size": 38921,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/i18n-and-localization.md",
+        "size": 23503,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/iframes-and-shadow-dom.md",
+        "size": 19223,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/locator-strategy.md",
+        "size": 19505,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/locators.md",
+        "size": 31810,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/mobile-and-responsive.md",
+        "size": 57760,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/multi-context-and-popups.md",
+        "size": 23279,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/multi-user-and-collaboration.md",
+        "size": 19012,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/network-mocking.md",
+        "size": 46446,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/nextjs.md",
+        "size": 35932,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/performance-testing.md",
+        "size": 21920,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/react.md",
+        "size": 38458,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/search-and-filter.md",
+        "size": 44662,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/security-testing.md",
+        "size": 23990,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/service-workers-and-pwa.md",
+        "size": 19110,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/SKILL.md",
+        "size": 5791,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/test-architecture.md",
+        "size": 23673,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/test-data-management.md",
+        "size": 35897,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/test-organization.md",
+        "size": 29752,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/third-party-integrations.md",
+        "size": 29103,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/trace-analysis.md",
+        "size": 11355,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/visual-regression.md",
+        "size": 37063,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/vue.md",
+        "size": 38326,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/websockets-and-realtime.md",
+        "size": 21586,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/core/when-to-mock.md",
+        "size": 26324,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/LICENSE",
+        "size": 1065,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/migration/from-cypress.md",
+        "size": 42918,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/migration/from-selenium.md",
+        "size": 39460,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/migration/SKILL.md",
+        "size": 645,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/advanced-workflows.md",
+        "size": 18762,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/core-commands.md",
+        "size": 10584,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/device-emulation.md",
+        "size": 13297,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/request-mocking.md",
+        "size": 10328,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/running-custom-code.md",
+        "size": 15126,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/screenshots-and-media.md",
+        "size": 12579,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/session-management.md",
+        "size": 12384,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/SKILL.md",
+        "size": 9919,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/storage-and-auth.md",
+        "size": 11473,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/test-generation.md",
+        "size": 11181,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/playwright-cli/tracing-and-debugging.md",
+        "size": 15035,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/pom/page-object-model.md",
+        "size": 28163,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/pom/pom-vs-fixtures-vs-helpers.md",
+        "size": 32348,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/pom/SKILL.md",
+        "size": 669,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/README.md",
+        "size": 13561,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/playwright-skill/SKILL.md",
+        "size": 11826,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/quick-change/SKILL.md",
+        "size": 10504,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/update-docs/SKILL.md",
+        "size": 357,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/using-git-worktrees/SKILL.md",
+        "size": 16012,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/anthropic-best-practices.md",
+        "size": 45820,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
+        "size": 5423,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/graphviz-conventions.dot",
+        "size": 5970,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/persuasion-principles.md",
+        "size": 5908,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/render-graphs.js",
+        "size": 4857,
+        "mode": 493
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/SKILL.md",
+        "size": 22624,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/skills/writing-skills/testing-skills-with-subagents.md",
+        "size": 12558,
+        "mode": 420
+      },
+      {
+        "path": "template/ai-specs/specboot-instructions.md",
+        "size": 17645,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/api-spec.yml",
+        "size": 30366,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/backend-standards.md",
+        "size": 41513,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/base-standards.md",
+        "size": 6090,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/data-model.md",
+        "size": 13472,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/development_guide.md",
+        "size": 2656,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/documentation-standards.md",
+        "size": 3807,
+        "mode": 420
+      },
+      {
+        "path": "template/docs/frontend-standards.md",
+        "size": 16752,
+        "mode": 420
+      }
+    ],
+    "entryCount": 120,
+    "bundled": []
+  }
+]

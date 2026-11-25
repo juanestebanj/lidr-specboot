@@ -1,0 +1,172 @@
+TAP version 13
+# Subtest: T12: source maintenance precedence and customer greenfield separation (instruction)
+ok 1 - T12: source maintenance precedence and customer greenfield separation (instruction)
+  ---
+  duration_ms: 2.903657
+  type: 'test'
+  ...
+# Subtest: T13: lifecycle instructions isolate acceptance from apply
+ok 2 - T13: lifecycle instructions isolate acceptance from apply
+  ---
+  duration_ms: 0.993021
+  type: 'test'
+  ...
+# Subtest: T14: empty manual import gets correct regular onboarding and reusable paths
+ok 3 - T14: empty manual import gets correct regular onboarding and reusable paths
+  ---
+  duration_ms: 84.220905
+  type: 'test'
+  ...
+# Subtest: T15: customer README preserved and repeat manual import is idempotent
+ok 4 - T15: customer README preserved and repeat manual import is idempotent
+  ---
+  duration_ms: 121.927547
+  type: 'test'
+  ...
+# Subtest: T16: conflicting onboarding symlink rejected without modifying its target
+ok 5 - T16: conflicting onboarding symlink rejected without modifying its target
+  ---
+  duration_ms: 54.428204
+  type: 'test'
+  ...
+# Subtest: T17: conflicting regular onboarding rejected without overwriting
+ok 6 - T17: conflicting regular onboarding rejected without overwriting
+  ---
+  duration_ms: 49.656367
+  type: 'test'
+  ...
+# Subtest: T18: all scenario identities and references validated
+ok 7 - T18: all scenario identities and references validated
+  ---
+  duration_ms: 5.054831
+  type: 'test'
+  ...
+# Subtest: T19: invalid mapped source rejected
+ok 8 - T19: invalid mapped source rejected
+  ---
+  duration_ms: 1.47206
+  type: 'test'
+  ...
+# Subtest: T20: nonexistent test identity rejected
+ok 9 - T20: nonexistent test identity rejected
+  ---
+  duration_ms: 1.209994
+  type: 'test'
+  ...
+# Subtest: T21: omitted scenario rejected
+ok 10 - T21: omitted scenario rejected
+  ---
+  duration_ms: 2.873138
+  type: 'test'
+  ...
+# Subtest: T22: duplicate mapping rejected
+ok 11 - T22: duplicate mapping rejected
+  ---
+  duration_ms: 2.554961
+  type: 'test'
+  ...
+# Subtest: T23: invalid classification and escaping source rejected
+ok 12 - T23: invalid classification and escaping source rejected
+  ---
+  duration_ms: 1.345992
+  type: 'test'
+  ...
+# Subtest: T24: affected-surface QA profile consistent across source instructions
+ok 13 - T24: affected-surface QA profile consistent across source instructions
+  ---
+  duration_ms: 0.483214
+  type: 'test'
+  ...
+# Subtest: T25: canonical skill inventory exhaustive for top-level entries
+ok 14 - T25: canonical skill inventory exhaustive for top-level entries
+  ---
+  duration_ms: 1.11263
+  type: 'test'
+  ...
+# Subtest: T26: installer reports recorded link creation error (injected failure)
+ok 15 - T26: installer reports recorded link creation error (injected failure)
+  ---
+  duration_ms: 63.23945
+  type: 'test'
+  ...
+# Subtest: T27: symlinked customer directory rejected before writes
+ok 16 - T27: symlinked customer directory rejected before writes
+  ---
+  duration_ms: 48.280432
+  type: 'test'
+  ...
+# Subtest: T01: specification structure, unique IDs and traceability
+ok 17 - T01: specification structure, unique IDs and traceability
+  ---
+  duration_ms: 12.303304
+  type: 'test'
+  ...
+# Subtest: T02: manifest defines package payload and installer
+ok 18 - T02: manifest defines package payload and installer
+  ---
+  duration_ms: 1.471311
+  type: 'test'
+  ...
+# Subtest: T03: clean explicit install copies template and creates correct links, not self-specs
+ok 19 - T03: clean explicit install copies template and creates correct links, not self-specs
+  ---
+  duration_ms: 97.179217
+  type: 'test'
+  ...
+# Subtest: T04: default install uses cwd
+ok 20 - T04: default install uses cwd
+  ---
+  duration_ms: 80.552084
+  type: 'test'
+  ...
+# Subtest: T05: existing file remains intact and repeat does not copy files
+ok 21 - T05: existing file remains intact and repeat does not copy files
+  ---
+  duration_ms: 124.030803
+  type: 'test'
+  ...
+# Subtest: T06: canonical source and agent-specific link integrity
+ok 22 - T06: canonical source and agent-specific link integrity
+  ---
+  duration_ms: 2.638949
+  type: 'test'
+  ...
+# Subtest: T07: factory instructions contain the documented order and separation
+ok 23 - T07: factory instructions contain the documented order and separation
+  ---
+  duration_ms: 0.374076
+  type: 'test'
+  ...
+# Subtest: T08: independent review instructions require reproduction and spec comparison
+ok 24 - T08: independent review instructions require reproduction and spec comparison
+  ---
+  duration_ms: 0.379473
+  type: 'test'
+  ...
+# Subtest: T09: onboarding includes OpenSpec and external tool setup
+ok 25 - T09: onboarding includes OpenSpec and external tool setup
+  ---
+  duration_ms: 0.487944
+  type: 'test'
+  ...
+# Subtest: T10: repository-only guidance points to baseline and pending review
+ok 26 - T10: repository-only guidance points to baseline and pending review
+  ---
+  duration_ms: 0.646576
+  type: 'test'
+  ...
+# Subtest: T11: manual import guidance excludes repository-only paths
+ok 27 - T11: manual import guidance excludes repository-only paths
+  ---
+  duration_ms: 1.045162
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 517.711362

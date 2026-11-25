@@ -30,6 +30,7 @@ For detailed standards and guidelines specific to different areas of the project
 - [Backend Standards](./backend-standards.md) - API development, database patterns, testing, security and backend best practices
 - [Frontend Standards](./frontend-standards.md) - React components, UI/UX guidelines, and frontend architecture
 - [Documentation Standards](./documentation-standards.md) - Technical documentation structure, formatting, and maintenance guidelines, including AI standards like this document
+- [OpenSpec Tasks Mandatory Steps](./openspec-tasks-mandatory-steps.md) - Required checklist and execution rules when creating or updating OpenSpec `tasks.md` files
 
 ## 4. Project Skills
 
@@ -37,7 +38,18 @@ For detailed standards and guidelines specific to different areas of the project
 - When a request matches a skill, load and follow the corresponding `SKILL.md` automatically before continuing.
 - Also load any referenced files in the skill folder (for example, `references/*.md`) when the skill requires them.
 
-## 5. Symlink Integrity and Multi-Agent Portability
+## 5. Planning Model Requirement
+
+Planning workflows must run with Opus high reasoning.
+
+This requirement applies to:
+- `enrich-us`
+- `openspec-ff-change`
+- `openspec-continue-change`
+
+Before starting any of these workflows, verify the session is using Opus high reasoning. If it is not, **self-correct** by adding `"model": "claude-opus-4-7"` to `.claude/settings.json` (use the `update-config` skill or edit directly), then continue — do not stop and ask the user. Do the same to come back to sonnet medium for any other step.
+
+## 6. Symlink Integrity and Multi-Agent Portability
 
 - **Canonical Source**: Keep reusable artifacts in `ai-specs` as the canonical source. Agent-specific paths (such as `.claude` and `.cursor`) should reference them through symlinks when possible.
 - **Update Safety**: Whenever a file is renamed, moved, or its suffix changes, verify and update all symlinks that target it before considering the change complete.
@@ -45,70 +57,21 @@ For detailed standards and guidelines specific to different areas of the project
 - **External Customization Review**: Whenever customization is introduced outside `ai-specs`, evaluate whether it should be moved into `ai-specs` and replaced with symlinks from the original locations.
 - **Completion Gate**: A change is incomplete if it leaves broken symlinks, stale targets, or duplicated canonical artifacts across agent-specific folders.
 
-## 6. OpenSpec Tasks Mandatory Steps
+## 7. Mandatory OpenSpec Artifact Updates for Post-Apply Changes
 
-When creating or updating OpenSpec `tasks.md` artifacts, follow these requirements.
-
-### 6.1 Read OpenSpec configuration first
-
-- **Required first action**: Read `openspec/config.yaml` before drafting or editing any `tasks.md` file.
-- **Purpose**: Capture mandatory steps, naming conventions, task structure, testing expectations, and documentation requirements from project configuration.
-
-### 6.2 Required backend task structure
-
-For backend changes, ensure the checklist includes these mandatory steps in order:
-
-1. **Step 0 (must be first)**: Create and switch to feature branch:
-   - `feature/[ticket-id]-backend` or `feature/[change-name]-backend`
-2. **Review and update existing unit tests (MANDATORY)**
-3. **Run unit tests and verify database state (MANDATORY)**
-4. **Manual endpoint testing with curl (MANDATORY - AGENT MUST EXECUTE)**
-5. **E2E testing with Playwright MCP when applicable (MANDATORY - AGENT MUST EXECUTE)**
-6. **Update technical documentation (MANDATORY)**
-
-### 6.3 Manual testing execution is agent responsibility
-
-- **Never delegate testing to the user** for steps required by `tasks.md`.
-- The agent must start required services, run tests, validate outcomes, and restore data state after CREATE/UPDATE/DELETE operations.
-- The agent must only mark tasks as completed (`[x]`) after required tests pass and cleanup is complete.
-
-### 6.4 Mandatory curl coverage (for endpoint work)
-
-Execute and verify:
-- GET endpoints
-- POST endpoints (with cleanup)
-- PUT/PATCH endpoints (with revert)
-- DELETE endpoints (with recreation/restore)
-- Error cases (validation, 404, auth as applicable)
-
-Document commands, responses, and restoration actions.
-
-### 6.5 Mandatory Playwright E2E coverage (when applicable)
-
-For frontend workflows or frontend/backend integration changes:
-- Run E2E flows with Playwright MCP tools
-- Validate success and error paths
-- Verify data persistence and consistency
-- Clean test data and restore environment state
-
-### 6.6 Completion checklist before finalizing `tasks.md`
-
-- Step 0 branch creation is first
-- Mandatory steps are present and sequential
-- Mandatory labels are explicit
-- Branch name matches backend convention
-- Manual testing tasks explicitly state "AGENT MUST EXECUTE"
-- Database restoration steps are included for mutating operations
-- E2E step is present when frontend workflow impact exists
-
-### 6.7 Mandatory artifact updates for change requests between `/apply` and `/archive`
-
-If a new fix/change is requested after `/apply` and before `/archive`, treat it as a spec update first (never code-only first).
+When a new fix/change request appears after `opsx:apply` (or `/apply`) and before `opsx:archive` (or `/archive`), agents must treat it as a spec update first, not as an informal "fix this quickly". It's the core principle of openspec, documentation is the source of truth.
 
 Required order:
-1. Update affected OpenSpec artifacts (scenarios, requirements/specs, `tasks.md`).
-2. Re-run artifact generation/update step when needed (`/continue`, `/ff`, or equivalent).
-3. Implement code only after artifacts reflect the new request.
-4. Re-run verification against updated artifacts before archiving.
 
-Do not close this window with direct coding that is not reflected in OpenSpec artifacts.
+1. Update the current OpenSpec change artifacts that are affected (for example: scenarios, requirements/specs, and `tasks.md`). Don't add tasks as "bugfixes" but as part of the initial design, thus in the proper section
+2. If artifact regeneration is needed, run the corresponding OpenSpec step (`opsx:continue`, `opsx:ff`, or equivalent) before coding.
+3. Implement code only after artifacts reflect the new request.
+4. Re-run verification against the updated artifacts before archiving.
+
+Do not apply direct code-only fixes in this window without updating OpenSpec artifacts.
+
+
+
+## 8. Specboot source repository self-application
+
+When this checkout contains `openspec/self-specification.md`, read that guide and `openspec/config.yaml` before changing Specboot itself. Use the repository's capability specifications and active change artifacts; apply the repository-specific QA applicability rules there rather than the example customer application's stack. This section is scoped to the Specboot source repository; do not install its self-specifications into customer projects. For changes to Specboot itself, baseline-aware maintenance takes precedence over Jira greenfield restrictions. Use implementation-only tasks.md and separate acceptance.md gates. Independent review and maintainer acceptance are required before separately authorized archival.

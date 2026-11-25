@@ -1,0 +1,141 @@
+TAP version 13
+# Subtest: T28: one recorded link failure returns one and preserves the complete report
+not ok 1 - T28: one recorded link failure returns one and preserves the complete report
+  ---
+  duration_ms: 679.6633
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\tests\\installer-exit-status.test.cjs:42:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    
+      lidr-specboot
+      Augmented Spec-driven development powered by OpenSpec
+    
+      Target: C:\Users\jjara\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{e49a6da2-60ad-47cc-b7a5-ddaf1a0595f5}\Temp\specboot-exit-1XhHHI\customer
+    
+      Files copied  118
+      Symlinks      35
+      Skipped       0
+    
+      Errors (1):
+        ! CLAUDE.md: injected link failure
+    
+      Next steps:
+      1. Update docs/ to match your project (stack, API, data model)
+      2. openspec init
+      3. /enrich-us  ->  /ff  ->  /apply
+    
+    
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\installer-exit-status.test.cjs:44:10
+    fixture (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\installer-exit-status.test.cjs:36:5)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\installer-exit-status.test.cjs:42:92)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.start (node:internal/test_runner/test:1177:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+  ...
+# Subtest: T29: multiple recorded link failures return one rather than an error count
+not ok 2 - T29: multiple recorded link failures return one rather than an error count
+  ---
+  duration_ms: 645.4256
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\inspection\\self-improvement\\tests\\installer-exit-status.test.cjs:50:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    
+      lidr-specboot
+      Augmented Spec-driven development powered by OpenSpec
+    
+      Target: C:\Users\jjara\AppData\Local\Packages\openai.codex_2p2nqsd0c76g0\AC\#!sandbox.{e49a6da2-60ad-47cc-b7a5-ddaf1a0595f5}\Temp\specboot-exit-xGOgOl\customer
+    
+      Files copied  118
+      Symlinks      0
+      Skipped       0
+    
+      Errors (36):
+        ! CLAUDE.md: injected link failure
+        ! AGENTS.md: injected link failure
+        ! codex.md: injected link failure
+        ! GEMINI.md: injected link failure
+        ! .claude/agents/backend-developer.md: injected link failure
+        ! .claude/agents/frontend-developer.md: injected link failure
+        ! .claude/agents/product-strategy-analyst.md: injected link failure
+        ! .claude/skills/code-auditing: injected link failure
+        ! .claude/skills/commit: injected link failure
+        ! .claude/skills/enrich-us: injected link failure
+        ! .claude/skills/explain: injected link failure
+        ! .claude/skills/factory: injected link failure
+        ! .claude/skills/meta-prompt: injected link failure
+        ! .claude/skills/mutation-testing: injected link failure
+        ! .claude/skills/playwright-qa-scenarios: injected link failure
+        ! .claude/skills/playwright-skill: injected link failure
+        ! .claude/skills/quick-change: injected link failure
+        ! .claude/skills/update-docs: injected link failure
+        ! .claude/skills/using-git-worktrees: injected link failure
+        ! .claude/skills/writing-skills: injected link failure
+        ! .cursor/agents/backend-developer.md: injected link failure
+        ! .cursor/agents/frontend-developer.md: injected link failure
+        ! .cursor/agents/product-strategy-analyst.md: injected link failure
+        ! .cursor/skills/code-auditing: injected link failure
+        ! .cursor/skills/commit: injected link failure
+        ! .cursor/skills/enrich-us: injected link failure
+        ! .cursor/skills/explain: injected link failure
+        ! .cursor/skills/factory: injected link failure
+        ! .cursor/skills/meta-prompt: injected link failure
+        ! .cursor/skills/mutation-testing: injected link failure
+        ! .cursor/skills/playwright-qa-scenarios: injected link failure
+        ! .cursor/skills/playwright-skill: injected link failure
+        ! .cursor/skills/quick-change: injected link failure
+        ! .cursor/skills/update-docs: injected link failure
+        ! .cursor/skills/using-git-worktrees: injected link failure
+        ! .cursor/skills/writing-skills: injected link failure
+    
+      Next steps:
+      1. Update docs/ to match your project (stack, API, data model)
+      2. openspec init
+      3. /enrich-us  ->  /ff  ->  /apply
+    
+    
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\installer-exit-status.test.cjs:52:10
+    fixture (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\installer-exit-status.test.cjs:36:5)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\inspection\self-improvement\tests\installer-exit-status.test.cjs:50:90)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+    Test.postRun (node:internal/test_runner/test:1447:19)
+    Test.run (node:internal/test_runner/test:1372:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+  ...
+# Subtest: T30: successful processing and repeat installation return zero and preserve customer bytes
+ok 3 - T30: successful processing and repeat installation return zero and preserve customer bytes
+  ---
+  duration_ms: 1022.2649
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 1
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2552.6485

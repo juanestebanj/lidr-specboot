@@ -1,0 +1,24 @@
+schema: spec-driven
+context: |
+  This repository develops LIDR Specboot itself, not a customer application.
+  Product baseline: openspec/specs/*/spec.md. Active changes: openspec/changes/.
+  Start with openspec/self-specification.md for scope, evidence and governance.
+  Technical stack: Node.js >=18 CommonJS installer; Markdown/YAML knowledge; filesystem symlinks; external OpenSpec CLI and coding agents.
+  docs/base-standards.md and ai-specs/ are engineering guidance. The ATS API/data model and development guide are example customer context, not Specboot runtime contracts. Do not apply their stack assumptions here.
+  SELF-MAINTENANCE.md defines the source self-manufacturing loop. Canonical docs/ and ai-specs/ generate packages/specboot/template/ and its digest manifest; do not hand-edit generated output. Run npm run build, npm run self:check and npm run package:check. packages/specboot/template/ is the shipped customer template. Repository-only specifications and tests must not be distributed to customers.
+  Use English, incremental changes, evidence-based verification and independent adversarial review.
+  Source self-maintenance mode overrides Jira greenfield restrictions for changes to Specboot itself. Read relevant baseline and active deltas; preserve customer greenfield mode.
+  All new behavior changes require an OpenSpec change before implementation; record known gaps separately from verified behavior.
+rules:
+  proposal:
+    - Identify affected capabilities, current behavior, non-goals, and distribution impact.
+  specs:
+    - Use stable requirement IDs and WHEN/THEN scenarios. Distinguish executable behavior from agent instructions.
+  design:
+    - Identify affected canonical and packaged files, trust boundaries, verification, and rollback.
+  tasks:
+    - Create a feature branch first when Git history is available; otherwise record the blocker and use an isolated copy.
+    - Review existing tests, implement tests before new behavior, run node --test tests/*.test.cjs and record evidence.
+    - Use affected-surface QA: require automated tests, applicable filesystem/CLI checks and documentation. Database, HTTP API and browser QA are required only when affected; record N/A with a reason for each unaffected surface.
+    - Keep tasks.md implementation-only. Record independent adversarial review, final verification, maintainer acceptance and separately authorized archival in acceptance.md, outside apply completeness.
+    - Do not mark unexecuted steps complete or archive without independent evidence and maintainer acceptance.

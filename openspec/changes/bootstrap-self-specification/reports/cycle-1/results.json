@@ -1,0 +1,74 @@
+{
+  "green": {
+    "status": 0,
+    "summary": [
+      "# tests 3",
+      "# pass 3",
+      "# fail 0"
+    ]
+  },
+  "traceability": {
+    "status": 0,
+    "summary": []
+  },
+  "mutation": {
+    "status": 1,
+    "summary": [
+      "# tests 3",
+      "# pass 1",
+      "# fail 2"
+    ]
+  },
+  "full-suite-windows": {
+    "status": 1,
+    "summary": [
+      "# tests 30",
+      "# pass 21",
+      "# fail 9"
+    ]
+  },
+  "environment": {
+    "node": "v24.16.0",
+    "platform": "win32",
+    "openspec": "C:\\Users\\jjara\\AppData\\Roaming\\npm\\openspec.CMD",
+    "source_symlinks_materialized": false,
+    "reason": "Windows denied symbolic-link creation (WinError 1314); original links will be retained in ZIP metadata."
+  },
+  "final-focused": {
+    "status": 0,
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "--test",
+      "--test-reporter=tap",
+      "tests/installer-exit-status.test.cjs"
+    ],
+    "summary": [
+      "# tests 3",
+      "# pass 3",
+      "# fail 0"
+    ]
+  },
+  "final-traceability": {
+    "status": 0,
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "scripts/validate-traceability.cjs"
+    ],
+    "summary": []
+  },
+  "final-openspec": {
+    "status": 0,
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\Users\\jjara\\AppData\\Roaming\\npm\\openspec.CMD",
+      "validate",
+      "--all",
+      "--strict"
+    ],
+    "summary": [
+      "Totals: 6 passed, 0 failed (6 items)"
+    ]
+  }
+}

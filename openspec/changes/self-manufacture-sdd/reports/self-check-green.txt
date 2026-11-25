@@ -1,0 +1,61 @@
+TAP version 13
+# Self-check: generated template
+# Self-check: scenario traceability
+# Self-check: official OpenSpec strict validation
+# Self-check: complete source tests
+# Self-check: generated template
+# Self-check: generated template
+# Self-check: scenario traceability
+# Self-check: generated template
+# Self-check: scenario traceability
+# Self-check: official OpenSpec strict validation
+# Self-check: generated template
+# Self-check: scenario traceability
+# Self-check: official OpenSpec strict validation
+# Self-check: complete source tests
+# Self-check: generated template
+# Subtest: T41: self-check runs all required stages in order without accepting the change
+ok 1 - T41: self-check runs all required stages in order without accepting the change
+  ---
+  duration_ms: 27.5509
+  type: 'test'
+  ...
+# Subtest: T42: every failed stage or spawn error stops subsequent checks
+ok 2 - T42: every failed stage or spawn error stops subsequent checks
+  ---
+  duration_ms: 57.6663
+  type: 'test'
+  ...
+# Subtest: T43: missing pinned OpenSpec tool fails before reporting success
+ok 3 - T43: missing pinned OpenSpec tool fails before reporting success
+  ---
+  duration_ms: 12.5484
+  type: 'test'
+  ...
+# Subtest: T44: unexpected OpenSpec version is rejected
+ok 4 - T44: unexpected OpenSpec version is rejected
+  ---
+  duration_ms: 14.8299
+  type: 'test'
+  ...
+# Subtest: T45: package verifier accepts the declared payload and rejects source or escaping paths
+ok 5 - T45: package verifier accepts the declared payload and rejects source or escaping paths
+  ---
+  duration_ms: 3.1329
+  type: 'test'
+  ...
+# Subtest: T46: package verifier rejects missing required products and duplicate paths
+ok 6 - T46: package verifier rejects missing required products and duplicate paths
+  ---
+  duration_ms: 0.5223
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 233.0414

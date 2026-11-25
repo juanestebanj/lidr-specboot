@@ -1,0 +1,9 @@
+✓ spec/agent-workflow
+✓ change/bootstrap-self-specification
+✓ spec/engineering-knowledge
+✓ spec/installation
+✓ spec/onboarding
+✓ spec/quality-assurance
+✓ change/self-manufacture-sdd
+Totals: 7 passed, 0 failed (7 items)
+- Validating...
