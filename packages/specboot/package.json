@@ -19,7 +19,8 @@
   },
   "files": [
     "bin/",
-    "template/"
+    "template/",
+    "template-manifest.json"
   ],
   "engines": {
     "node": ">=18"

@@ -4,13 +4,14 @@
 Repository main at f6c80442fa1d6cfefdbe25c2d9d0223ac89046c1 is the original baseline. The uploaded remediation and cycle 1 are proposed imports, not accepted upstream history. Work is isolated on feature/self-manufacture-sdd. GitHub connection branch writes returned403; local authenticated GitHub CLI is the allowed fallback if available.
 
 ## Build graph
-Canonical docs/ and ai-specs/ -> scripts/build-template.cjs -> packages/specboot/template/ and template-manifest.json -> scripts/check-package.cjs -> npm payload -> installer smoke tests.
+Canonical docs/, ai-specs/ and .cursor/rules/ adapter configuration -> scripts/build-template.cjs -> packages/specboot/template/ and template-manifest.json -> scripts/check-package.cjs -> npm payload -> installer smoke tests.
 OpenSpec baseline/deltas -> scenario mapping -> self-check -> independent review -> CI -> human acceptance.
 
 ## Determinism
 Use Node filesystem and crypto APIs without runtime dependencies. Sort paths using byte/lexical ordering, store portable forward-slash paths and SHA-256 values, and omit timestamps, absolute paths and machine-specific data. Manifest source and target digests refer to exact copied bytes. Repeated builds produce identical paths and bytes.
 
 ## Safety and source of truth
+The existing Cursor discovery rule is a canonical adapter binding outside the shared docs/ai-specs roots. Include .cursor/rules/ explicitly, while excluding .cursor/agents and .cursor/skills compatibility links, so generation preserves existing multi-copilot discovery.
 The generator owns only packages/specboot/template/ and packages/specboot/template-manifest.json. Validate source and output paths before writes; reject symbolic links or special files in canonical inputs or managed outputs rather than following them. Missing, changed and extra generated files fail check mode without mutation. Regeneration may remove stale regular generated files only inside the verified managed directory.
 Root agent compatibility links are retained as Git symbolic links. The dedicated customer onboarding file is canonical and regular. No source-only root paths are copied.
 
@@ -23,3 +24,7 @@ The external AI agent reads relevant current baseline and active changes, create
 
 ## QA applicability
 Filesystem, CLI, generated artifact, specification, packaging and documentation QA apply. Database, HTTP API and browser QA are N/A. Windows native symlink failures remain visible; Linux CI must run the complete suite.
+
+## Packed-product verification amendment
+
+The source tests additionally create an actual npm tarball, install it offline with lifecycle scripts disabled into a temporary consumer, and execute the installed bin. This closes the gap between testing source files and testing the manufactured distribution. It verifies manifest digests, compatibility links, source-only exclusion and repeat preservation. npm is invoked as a JavaScript entry point without a shell; temporary cleanup checks the exact resolved parent and prefix.

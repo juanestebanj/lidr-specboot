@@ -1,0 +1,217 @@
+TAP version 13
+# Subtest: T41: self-check runs all required stages in order without accepting the change
+not ok 1 - T41: self-check runs all required stages in order without accepting the change
+  ---
+  duration_ms: 19.373
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:19:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Cannot find module '../scripts/self-check.cjs'
+    Require stack:
+    - C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs
+  code: 'MODULE_NOT_FOUND'
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+    wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    Module._load (node:internal/modules/cjs/loader:1285:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    Module.require (node:internal/modules/cjs/loader:1600:12)
+    require (node:internal/modules/helpers:153:16)
+    check (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:7:30)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:21:18
+  ...
+# Subtest: T42: every failed stage or spawn error stops subsequent checks
+not ok 2 - T42: every failed stage or spawn error stops subsequent checks
+  ---
+  duration_ms: 16.8331
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:30:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /failed/i. Input:
+    
+    "Error: Cannot find module '../scripts/self-check.cjs'\n" +
+      'Require stack:\n' +
+      '- C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: |-
+    Cannot find module '../scripts/self-check.cjs'
+    Require stack:
+    - C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+    wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    Module._load (node:internal/modules/cjs/loader:1285:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    Module.require (node:internal/modules/cjs/loader:1600:12)
+    require (node:internal/modules/helpers:153:16)
+    check (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:7:30)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:33:25
+  operator: 'throws'
+  stack: |-
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:33:12
+    fixture (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:17:9)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:30:78)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+    Test.postRun (node:internal/test_runner/test:1447:19)
+    Test.run (node:internal/test_runner/test:1372:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+  ...
+# Subtest: T43: missing pinned OpenSpec tool fails before reporting success
+not ok 3 - T43: missing pinned OpenSpec tool fails before reporting success
+  ---
+  duration_ms: 18.4343
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:38:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /OpenSpec|openspec/i. Input:
+    
+    "Error: Cannot find module '../scripts/self-check.cjs'\n" +
+      'Require stack:\n' +
+      '- C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: |-
+    Cannot find module '../scripts/self-check.cjs'
+    Require stack:
+    - C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+    wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    Module._load (node:internal/modules/cjs/loader:1285:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    Module.require (node:internal/modules/cjs/loader:1600:12)
+    require (node:internal/modules/helpers:153:16)
+    check (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:7:30)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:40:23
+  operator: 'throws'
+  stack: |-
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:40:10
+    fixture (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:17:9)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:38:80)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+    Test.postRun (node:internal/test_runner/test:1447:19)
+    Test.run (node:internal/test_runner/test:1372:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+  ...
+# Subtest: T44: unexpected OpenSpec version is rejected
+not ok 4 - T44: unexpected OpenSpec version is rejected
+  ---
+  duration_ms: 16.6009
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:42:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /version|pinned/i. Input:
+    
+    "Error: Cannot find module '../scripts/self-check.cjs'\n" +
+      'Require stack:\n' +
+      '- C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: |-
+    Cannot find module '../scripts/self-check.cjs'
+    Require stack:
+    - C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+    wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    Module._load (node:internal/modules/cjs/loader:1285:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    Module.require (node:internal/modules/cjs/loader:1600:12)
+    require (node:internal/modules/helpers:153:16)
+    check (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:7:30)
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:44:23
+  operator: 'throws'
+  stack: |-
+    C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:44:10
+    fixture (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:17:9)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:42:60)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+    Test.postRun (node:internal/test_runner/test:1447:19)
+    Test.run (node:internal/test_runner/test:1372:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+  ...
+# Subtest: T45: package verifier accepts the declared payload and rejects source or escaping paths
+not ok 5 - T45: package verifier accepts the declared payload and rejects source or escaping paths
+  ---
+  duration_ms: 1.8401
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:46:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Cannot find module '../scripts/check-package.cjs'
+    Require stack:
+    - C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs
+  code: 'MODULE_NOT_FOUND'
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+    wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    Module._load (node:internal/modules/cjs/loader:1285:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    Module.require (node:internal/modules/cjs/loader:1600:12)
+    require (node:internal/modules/helpers:153:16)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:47:31)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+  ...
+# Subtest: T46: package verifier rejects missing required products and duplicate paths
+not ok 6 - T46: package verifier rejects missing required products and duplicate paths
+  ---
+  duration_ms: 1.6359
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:54:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Cannot find module '../scripts/check-package.cjs'
+    Require stack:
+    - C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs
+  code: 'MODULE_NOT_FOUND'
+  stack: |-
+    Module._resolveFilename (node:internal/modules/cjs/loader:1500:15)
+    wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)
+    defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)
+    resolveForCJSWithHooks (node:internal/modules/cjs/loader:1116:12)
+    Module._load (node:internal/modules/cjs/loader:1285:25)
+    wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    Module.require (node:internal/modules/cjs/loader:1600:12)
+    require (node:internal/modules/helpers:153:16)
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:55:31)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 0
+# fail 6
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 237.2202

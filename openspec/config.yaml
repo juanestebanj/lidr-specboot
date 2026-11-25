@@ -5,7 +5,7 @@ context: |
   Start with openspec/self-specification.md for scope, evidence and governance.
   Technical stack: Node.js >=18 CommonJS installer; Markdown/YAML knowledge; filesystem symlinks; external OpenSpec CLI and coding agents.
   docs/base-standards.md and ai-specs/ are engineering guidance. The ATS API/data model and development guide are example customer context, not Specboot runtime contracts. Do not apply their stack assumptions here.
-  packages/specboot/template/ is the shipped customer template. Repository-only specifications and tests must not be distributed to customers.
+  SELF-MAINTENANCE.md defines the source self-manufacturing loop. Canonical docs/ and ai-specs/ generate packages/specboot/template/ and its digest manifest; do not hand-edit generated output. Run npm run build, npm run self:check and npm run package:check. packages/specboot/template/ is the shipped customer template. Repository-only specifications and tests must not be distributed to customers.
   Use English, incremental changes, evidence-based verification and independent adversarial review.
   Source self-maintenance mode overrides Jira greenfield restrictions for changes to Specboot itself. Read relevant baseline and active deltas; preserve customer greenfield mode.
   All new behavior changes require an OpenSpec change before implementation; record known gaps separately from verified behavior.

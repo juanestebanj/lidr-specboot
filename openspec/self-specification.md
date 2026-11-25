@@ -52,3 +52,7 @@ See changes/bootstrap-self-specification/self-improvement-plan.md and the cycle-
 reports for the current candidate and limitations. Prior bootstrap verification
 and acceptance records remain historical; they do not approve this cycle.
 This cycle changes the packaged executable but does not synchronize template guidance.
+
+## Proposed self-manufacturing workflow
+
+Read ../SELF-MAINTENANCE.md and changes/self-manufacture-sdd/ for deterministic template generation, a source digest manifest, pinned self-checks and Linux CI. Earlier statements about missing CI and unconstrained template drift describe the pre-change snapshot; current acceptance still requires independent review, CI evidence and human judgment.

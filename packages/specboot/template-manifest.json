@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": ".cursor/rules/use-base-rules.mdc",
+      "source": ".cursor/rules/use-base-rules.mdc",
+      "sourceSha256": "7f8751605efcb2b634b0576a54c59a61609276b128ecd1e896c3cdc1abafddde",
+      "targetSha256": "7f8751605efcb2b634b0576a54c59a61609276b128ecd1e896c3cdc1abafddde"
+    },
+    {
+      "path": "ai-specs/agents/backend-developer.md",
+      "source": "ai-specs/agents/backend-developer.md",
+      "sourceSha256": "3684c0fd3597d77095d98d12fedfa625bbd16f72041b8b37af9bddbe35168026",
+      "targetSha256": "3684c0fd3597d77095d98d12fedfa625bbd16f72041b8b37af9bddbe35168026"
+    },
+    {
+      "path": "ai-specs/agents/frontend-developer.md",
+      "source": "ai-specs/agents/frontend-developer.md",
+      "sourceSha256": "73a6373fd2903a6312dda516b3fa684f288530413dde00b419bb9e2455cc535e",
+      "targetSha256": "73a6373fd2903a6312dda516b3fa684f288530413dde00b419bb9e2455cc535e"
+    },
+    {
+      "path": "ai-specs/agents/product-strategy-analyst.md",
+      "source": "ai-specs/agents/product-strategy-analyst.md",
+      "sourceSha256": "7e718a0b1cbbbeeca38f97bea9ea5c7f039ba1e3935822b7982e20f179ae141f",
+      "targetSha256": "7e718a0b1cbbbeeca38f97bea9ea5c7f039ba1e3935822b7982e20f179ae141f"
+    },
+    {
+      "path": "ai-specs/scripts/code_review.sh",
+      "source": "ai-specs/scripts/code_review.sh",
+      "sourceSha256": "04f5ef459f495d2093dd281997393ba720c130309e27d4f71c1741b2cab89a1d",
+      "targetSha256": "04f5ef459f495d2093dd281997393ba720c130309e27d4f71c1741b2cab89a1d"
+    },
+    {
+      "path": "ai-specs/skills/adversarial-review/SKILL.md",
+      "source": "ai-specs/skills/adversarial-review/SKILL.md",
+      "sourceSha256": "4d687889bb157016bb7ebb4393c1c039c14d85220fa190aff527f2e13aaae038",
+      "targetSha256": "4d687889bb157016bb7ebb4393c1c039c14d85220fa190aff527f2e13aaae038"
+    },
+    {
+      "path": "ai-specs/skills/code-auditing/SKILL.md",
+      "source": "ai-specs/skills/code-auditing/SKILL.md",
+      "sourceSha256": "7bbe6a8629a93bf581e23cdbb186e743c479b39f64d18dd01068aff03c45f64a",
+      "targetSha256": "7bbe6a8629a93bf581e23cdbb186e743c479b39f64d18dd01068aff03c45f64a"
+    },
+    {
+      "path": "ai-specs/skills/code-auditing/references/audit-methodology.md",
+      "source": "ai-specs/skills/code-auditing/references/audit-methodology.md",
+      "sourceSha256": "f5c8efea408497a0128d7c134a8d2a132ff891d022b78939e0fa5acd14af6890",
+      "targetSha256": "f5c8efea408497a0128d7c134a8d2a132ff891d022b78939e0fa5acd14af6890"
+    },
+    {
+      "path": "ai-specs/skills/code-auditing/references/dead-code-methodology.md",
+      "source": "ai-specs/skills/code-auditing/references/dead-code-methodology.md",
+      "sourceSha256": "39b1a329763a7eb19920256081f16f61bb611fb736569a7594d9f3185d40b299",
+      "targetSha256": "39b1a329763a7eb19920256081f16f61bb611fb736569a7594d9f3185d40b299"
+    },
+    {
+      "path": "ai-specs/skills/commit/SKILL.md",
+      "source": "ai-specs/skills/commit/SKILL.md",
+      "sourceSha256": "318a91a032dd5325c6e19bca71a49248f44f62287334017ce79f75e6020d0839",
+      "targetSha256": "318a91a032dd5325c6e19bca71a49248f44f62287334017ce79f75e6020d0839"
+    },
+    {
+      "path": "ai-specs/skills/enrich-us/SKILL.md",
+      "source": "ai-specs/skills/enrich-us/SKILL.md",
+      "sourceSha256": "4c3b1edefcaff868b2922495558948bfcbccff321dc7ca4808273800ed7b3328",
+      "targetSha256": "4c3b1edefcaff868b2922495558948bfcbccff321dc7ca4808273800ed7b3328"
+    },
+    {
+      "path": "ai-specs/skills/explain/SKILL.md",
+      "source": "ai-specs/skills/explain/SKILL.md",
+      "sourceSha256": "4745ca311ec92582fe46285231a53361e1c0704ddfc711ac202bdce6e44fc49d",
+      "targetSha256": "4745ca311ec92582fe46285231a53361e1c0704ddfc711ac202bdce6e44fc49d"
+    },
+    {
+      "path": "ai-specs/skills/factory/SKILL.md",
+      "source": "ai-specs/skills/factory/SKILL.md",
+      "sourceSha256": "ee2f387f0eca7da2cf4084820fb7cf40eab6fb8198e575138f04587e8d980748",
+      "targetSha256": "ee2f387f0eca7da2cf4084820fb7cf40eab6fb8198e575138f04587e8d980748"
+    },
+    {
+      "path": "ai-specs/skills/factory/references/parallel-tasks.md",
+      "source": "ai-specs/skills/factory/references/parallel-tasks.md",
+      "sourceSha256": "06e2c7a0633edadd4cca5a278198c0c3dfa3d728bbd6ea79edcdd4956fb21a7a",
+      "targetSha256": "06e2c7a0633edadd4cca5a278198c0c3dfa3d728bbd6ea79edcdd4956fb21a7a"
+    },
+    {
+      "path": "ai-specs/skills/factory/references/portal-branching-process.md",
+      "source": "ai-specs/skills/factory/references/portal-branching-process.md",
+      "sourceSha256": "db4903a07640690078a7d8356643c0e5c40c3285f685ce95cd7f69cc6d792a7e",
+      "targetSha256": "db4903a07640690078a7d8356643c0e5c40c3285f685ce95cd7f69cc6d792a7e"
+    },
+    {
+      "path": "ai-specs/skills/meta-prompt/SKILL.md",
+      "source": "ai-specs/skills/meta-prompt/SKILL.md",
+      "sourceSha256": "035d84ab8c3139588b26f55098a7d0b46752fd519dcc01e165f3b7a349099d7d",
+      "targetSha256": "035d84ab8c3139588b26f55098a7d0b46752fd519dcc01e165f3b7a349099d7d"
+    },
+    {
+      "path": "ai-specs/skills/mutation-testing/SKILL.md",
+      "source": "ai-specs/skills/mutation-testing/SKILL.md",
+      "sourceSha256": "1cd59b1bfc58a38d7def788d6f65cd747d528a67381defd8b9ae2a139224139e",
+      "targetSha256": "1cd59b1bfc58a38d7def788d6f65cd747d528a67381defd8b9ae2a139224139e"
+    },
+    {
+      "path": "ai-specs/skills/openspec-sync-specs/SKILL.md",
+      "source": "ai-specs/skills/openspec-sync-specs/SKILL.md",
+      "sourceSha256": "ea77918baec6b8943c73e36e512d203dfe4d063c9fd9f39fa15b779202f93062",
+      "targetSha256": "ea77918baec6b8943c73e36e512d203dfe4d063c9fd9f39fa15b779202f93062"
+    },
+    {
+      "path": "ai-specs/skills/playwright-qa-scenarios/SKILL.md",
+      "source": "ai-specs/skills/playwright-qa-scenarios/SKILL.md",
+      "sourceSha256": "a7e1961af848a310d8375275b886a82618100686bcb58fa022965f39c4a4e1bf",
+      "targetSha256": "a7e1961af848a310d8375275b886a82618100686bcb58fa022965f39c4a4e1bf"
+    },
+    {
+      "path": "ai-specs/skills/playwright-qa-scenarios/assets/scenario-catalog-template.md",
+      "source": "ai-specs/skills/playwright-qa-scenarios/assets/scenario-catalog-template.md",
+      "sourceSha256": "ee13929cca0d4e26d4740d217c7304c87c169d5a287a5ffa56ab16760cdbdc13",
+      "targetSha256": "ee13929cca0d4e26d4740d217c7304c87c169d5a287a5ffa56ab16760cdbdc13"
+    },
+    {
+      "path": "ai-specs/skills/playwright-qa-scenarios/examples.md",
+      "source": "ai-specs/skills/playwright-qa-scenarios/examples.md",
+      "sourceSha256": "75bed8102e018afa1803ba6a43473a024fd79c74d3bf55070e97cc95a12dc18f",
+      "targetSha256": "75bed8102e018afa1803ba6a43473a024fd79c74d3bf55070e97cc95a12dc18f"
+    },
+    {
+      "path": "ai-specs/skills/playwright-qa-scenarios/references/e2e-suite-conventions.md",
+      "source": "ai-specs/skills/playwright-qa-scenarios/references/e2e-suite-conventions.md",
+      "sourceSha256": "28036e3206ca595275608f7c0ac501809e33349c98dd7958478e489f8e260b50",
+      "targetSha256": "28036e3206ca595275608f7c0ac501809e33349c98dd7958478e489f8e260b50"
+    },
+    {
+      "path": "ai-specs/skills/playwright-qa-scenarios/references/edge-case-catalog.md",
+      "source": "ai-specs/skills/playwright-qa-scenarios/references/edge-case-catalog.md",
+      "sourceSha256": "217ab8871baee36c104a86e6293b09c73dbd4b1271df35ef78b689b48ba63a4f",
+      "targetSha256": "217ab8871baee36c104a86e6293b09c73dbd4b1271df35ef78b689b48ba63a4f"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/LICENSE",
+      "source": "ai-specs/skills/playwright-skill/LICENSE",
+      "sourceSha256": "9b745cd92c3dfb415f5adefb81ff71674dd6a764cba8aa3ab14a920d1ab272ec",
+      "targetSha256": "9b745cd92c3dfb415f5adefb81ff71674dd6a764cba8aa3ab14a920d1ab272ec"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/README.md",
+      "source": "ai-specs/skills/playwright-skill/README.md",
+      "sourceSha256": "4a4bbc523572756d7ba3a3d67a7c722ec8b3180ea2c5f1f80ccdc620b95dfedc",
+      "targetSha256": "4a4bbc523572756d7ba3a3d67a7c722ec8b3180ea2c5f1f80ccdc620b95dfedc"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/SKILL.md",
+      "source": "ai-specs/skills/playwright-skill/SKILL.md",
+      "sourceSha256": "cb24d539530d32e5892e2d8264d3b099e135ee04882535599771d47583edc3f2",
+      "targetSha256": "cb24d539530d32e5892e2d8264d3b099e135ee04882535599771d47583edc3f2"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/SKILL.md",
+      "source": "ai-specs/skills/playwright-skill/ci/SKILL.md",
+      "sourceSha256": "e5fed8f9837a00b3bf533b6b5ce38fe3df28de447ed88f170c2f74fff2d42a7e",
+      "targetSha256": "e5fed8f9837a00b3bf533b6b5ce38fe3df28de447ed88f170c2f74fff2d42a7e"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/ci-github-actions.md",
+      "source": "ai-specs/skills/playwright-skill/ci/ci-github-actions.md",
+      "sourceSha256": "a9af4d41ebf807c5efde00865ff7056c5f387dd69d607275456f20f8aa4b7b6c",
+      "targetSha256": "a9af4d41ebf807c5efde00865ff7056c5f387dd69d607275456f20f8aa4b7b6c"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/ci-gitlab.md",
+      "source": "ai-specs/skills/playwright-skill/ci/ci-gitlab.md",
+      "sourceSha256": "2919f482487231177e793c6c3dbcb3dbffbbd81c50d8ea2e5feedd278a5ca045",
+      "targetSha256": "2919f482487231177e793c6c3dbcb3dbffbbd81c50d8ea2e5feedd278a5ca045"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/ci-other.md",
+      "source": "ai-specs/skills/playwright-skill/ci/ci-other.md",
+      "sourceSha256": "325f7a4af904b2f232eff17996b2cb524809b94ea0e7a27a5b580999009ef167",
+      "targetSha256": "325f7a4af904b2f232eff17996b2cb524809b94ea0e7a27a5b580999009ef167"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/docker-and-containers.md",
+      "source": "ai-specs/skills/playwright-skill/ci/docker-and-containers.md",
+      "sourceSha256": "aa262bebfa7d71fa7fdd993c208e1bf7687cf9fce4d6b07d14b2d84c2cdf6aeb",
+      "targetSha256": "aa262bebfa7d71fa7fdd993c208e1bf7687cf9fce4d6b07d14b2d84c2cdf6aeb"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/global-setup-teardown.md",
+      "source": "ai-specs/skills/playwright-skill/ci/global-setup-teardown.md",
+      "sourceSha256": "98f8900a187b0ec9cf7ad2ee5ae92cb865a0fad8ce6a8af8a8762d103e0cc271",
+      "targetSha256": "98f8900a187b0ec9cf7ad2ee5ae92cb865a0fad8ce6a8af8a8762d103e0cc271"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/parallel-and-sharding.md",
+      "source": "ai-specs/skills/playwright-skill/ci/parallel-and-sharding.md",
+      "sourceSha256": "22e57b5f18763070911a45a6ede369c45ebc0ddc356ec7c289152d45b9bcb8a0",
+      "targetSha256": "22e57b5f18763070911a45a6ede369c45ebc0ddc356ec7c289152d45b9bcb8a0"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/projects-and-dependencies.md",
+      "source": "ai-specs/skills/playwright-skill/ci/projects-and-dependencies.md",
+      "sourceSha256": "0037a53233aa06078d531630983657136c6372353e4bc03bcad2e7852fc19548",
+      "targetSha256": "0037a53233aa06078d531630983657136c6372353e4bc03bcad2e7852fc19548"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/reporting-and-artifacts.md",
+      "source": "ai-specs/skills/playwright-skill/ci/reporting-and-artifacts.md",
+      "sourceSha256": "b0cf7f8fe73c3ebd6c64e6ffb8fd9ef9189b06267f76ad005bec50333f5aa738",
+      "targetSha256": "b0cf7f8fe73c3ebd6c64e6ffb8fd9ef9189b06267f76ad005bec50333f5aa738"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/ci/test-coverage.md",
+      "source": "ai-specs/skills/playwright-skill/ci/test-coverage.md",
+      "sourceSha256": "33394220319277b8b2a47a5fb148276ef0fcf98e37aafc29ff1640203ce0d4f3",
+      "targetSha256": "33394220319277b8b2a47a5fb148276ef0fcf98e37aafc29ff1640203ce0d4f3"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/SKILL.md",
+      "source": "ai-specs/skills/playwright-skill/core/SKILL.md",
+      "sourceSha256": "38f8aa639109647fc9e279fb1e05d0ad34130a8377d3d829907da5215b38fa70",
+      "targetSha256": "38f8aa639109647fc9e279fb1e05d0ad34130a8377d3d829907da5215b38fa70"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/accessibility.md",
+      "source": "ai-specs/skills/playwright-skill/core/accessibility.md",
+      "sourceSha256": "5636899870516df1b63c13421e50c5e182a03d74a656791ef42467e026776cf4",
+      "targetSha256": "5636899870516df1b63c13421e50c5e182a03d74a656791ef42467e026776cf4"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/angular.md",
+      "source": "ai-specs/skills/playwright-skill/core/angular.md",
+      "sourceSha256": "3a60526012ce5e37b45ddfab7a098ea04279f8787a07e5c3ffe1fb458cd31bef",
+      "targetSha256": "3a60526012ce5e37b45ddfab7a098ea04279f8787a07e5c3ffe1fb458cd31bef"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/api-testing.md",
+      "source": "ai-specs/skills/playwright-skill/core/api-testing.md",
+      "sourceSha256": "320fce35b04f5ad323c79ab21f2870b6a1d89018dbb99641ffa7707729ea4a16",
+      "targetSha256": "320fce35b04f5ad323c79ab21f2870b6a1d89018dbb99641ffa7707729ea4a16"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/assertions-and-waiting.md",
+      "source": "ai-specs/skills/playwright-skill/core/assertions-and-waiting.md",
+      "sourceSha256": "13a27e0d885644c3027aaa70117f3c1efb3fbde6b1f7f923ae97f0636a2c4473",
+      "targetSha256": "13a27e0d885644c3027aaa70117f3c1efb3fbde6b1f7f923ae97f0636a2c4473"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/auth-flows.md",
+      "source": "ai-specs/skills/playwright-skill/core/auth-flows.md",
+      "sourceSha256": "873db172eded4d3563487be1e401a94e72e0816d26d8130203e29b79924c029a",
+      "targetSha256": "873db172eded4d3563487be1e401a94e72e0816d26d8130203e29b79924c029a"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/authentication.md",
+      "source": "ai-specs/skills/playwright-skill/core/authentication.md",
+      "sourceSha256": "3ac21e8af2c8675bd440ee0d97c03d1b6c3ff95608330a5e266d19aaedc9e9b4",
+      "targetSha256": "3ac21e8af2c8675bd440ee0d97c03d1b6c3ff95608330a5e266d19aaedc9e9b4"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/browser-apis.md",
+      "source": "ai-specs/skills/playwright-skill/core/browser-apis.md",
+      "sourceSha256": "8fdbcb6706c306c59f046c9304d3f6beddd2abe12475ddf4c201d53bd31df5c5",
+      "targetSha256": "8fdbcb6706c306c59f046c9304d3f6beddd2abe12475ddf4c201d53bd31df5c5"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/browser-extensions.md",
+      "source": "ai-specs/skills/playwright-skill/core/browser-extensions.md",
+      "sourceSha256": "f937acbae6a8d7c37a35b5a7812571f658ecc015d41411c0b347be3d7fce8045",
+      "targetSha256": "f937acbae6a8d7c37a35b5a7812571f658ecc015d41411c0b347be3d7fce8045"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/canvas-and-webgl.md",
+      "source": "ai-specs/skills/playwright-skill/core/canvas-and-webgl.md",
+      "sourceSha256": "c02a292ce0e0d27ed9f2d4388fd4753537ca67bc3082eec6e1a6d7daf18033b2",
+      "targetSha256": "c02a292ce0e0d27ed9f2d4388fd4753537ca67bc3082eec6e1a6d7daf18033b2"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/clock-and-time-mocking.md",
+      "source": "ai-specs/skills/playwright-skill/core/clock-and-time-mocking.md",
+      "sourceSha256": "bf93baa816e63f9122ffdb54cd4fe887592b6252373c9380aba87ddd645c0683",
+      "targetSha256": "bf93baa816e63f9122ffdb54cd4fe887592b6252373c9380aba87ddd645c0683"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/common-pitfalls.md",
+      "source": "ai-specs/skills/playwright-skill/core/common-pitfalls.md",
+      "sourceSha256": "e7e482fb3848007864df50f4e8e506e0f1b717d2e85f0519cbaba66aecf636a1",
+      "targetSha256": "e7e482fb3848007864df50f4e8e506e0f1b717d2e85f0519cbaba66aecf636a1"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/component-testing.md",
+      "source": "ai-specs/skills/playwright-skill/core/component-testing.md",
+      "sourceSha256": "831c7dbd31225b5b536862291fb6290ebd0a7ecb120a2d109d462afbd5dc12b7",
+      "targetSha256": "831c7dbd31225b5b536862291fb6290ebd0a7ecb120a2d109d462afbd5dc12b7"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/configuration.md",
+      "source": "ai-specs/skills/playwright-skill/core/configuration.md",
+      "sourceSha256": "a2ac6b8b69a8b8049620db4affb28f58284e495887a5ea9356739c23dd61c0b3",
+      "targetSha256": "a2ac6b8b69a8b8049620db4affb28f58284e495887a5ea9356739c23dd61c0b3"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/crud-testing.md",
+      "source": "ai-specs/skills/playwright-skill/core/crud-testing.md",
+      "sourceSha256": "6d3f70f4af3f17caf6c7e07e95210a544dec25a08a8a2f750c0ca9dd48d54e1b",
+      "targetSha256": "6d3f70f4af3f17caf6c7e07e95210a544dec25a08a8a2f750c0ca9dd48d54e1b"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/debugging.md",
+      "source": "ai-specs/skills/playwright-skill/core/debugging.md",
+      "sourceSha256": "cb50aff959c463eed0a3d9f646df2a132795c70185fc36a890b0c6f7b76d72a7",
+      "targetSha256": "cb50aff959c463eed0a3d9f646df2a132795c70185fc36a890b0c6f7b76d72a7"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/drag-and-drop.md",
+      "source": "ai-specs/skills/playwright-skill/core/drag-and-drop.md",
+      "sourceSha256": "39706309fc12b061121920d56fdf65ea95bb086153aef64d2ef8801b11ac2adc",
+      "targetSha256": "39706309fc12b061121920d56fdf65ea95bb086153aef64d2ef8801b11ac2adc"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/dynamic-test-selection.md",
+      "source": "ai-specs/skills/playwright-skill/core/dynamic-test-selection.md",
+      "sourceSha256": "90838b5046027a965525ca4080a9b1c0627118501588c48c7642f407a141b636",
+      "targetSha256": "90838b5046027a965525ca4080a9b1c0627118501588c48c7642f407a141b636"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/electron-testing.md",
+      "source": "ai-specs/skills/playwright-skill/core/electron-testing.md",
+      "sourceSha256": "39098c51fd7f780e39b57dcd69c2101e204e7fd9dd6eeacf520cd40cbba72f73",
+      "targetSha256": "39098c51fd7f780e39b57dcd69c2101e204e7fd9dd6eeacf520cd40cbba72f73"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/error-and-edge-cases.md",
+      "source": "ai-specs/skills/playwright-skill/core/error-and-edge-cases.md",
+      "sourceSha256": "08a20ab127967ecc0f34ac3b9ff7dbc2a0442d4d1e3ea790eb22f0fc34d6d4ff",
+      "targetSha256": "08a20ab127967ecc0f34ac3b9ff7dbc2a0442d4d1e3ea790eb22f0fc34d6d4ff"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/error-index.md",
+      "source": "ai-specs/skills/playwright-skill/core/error-index.md",
+      "sourceSha256": "c825efe892e810039b4a2e583dd49257e87c5f588b195414eb698424b7505833",
+      "targetSha256": "c825efe892e810039b4a2e583dd49257e87c5f588b195414eb698424b7505833"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/file-operations.md",
+      "source": "ai-specs/skills/playwright-skill/core/file-operations.md",
+      "sourceSha256": "fca9aa1b361b95eca0cd204805a997fef692f34650048234b8250e8da07a9760",
+      "targetSha256": "fca9aa1b361b95eca0cd204805a997fef692f34650048234b8250e8da07a9760"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/file-upload-download.md",
+      "source": "ai-specs/skills/playwright-skill/core/file-upload-download.md",
+      "sourceSha256": "2cb1f8d2918a48e98ec39746f888076f4e39b0eefad9eb42f0c65b53f33b6e05",
+      "targetSha256": "2cb1f8d2918a48e98ec39746f888076f4e39b0eefad9eb42f0c65b53f33b6e05"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/fixtures-and-hooks.md",
+      "source": "ai-specs/skills/playwright-skill/core/fixtures-and-hooks.md",
+      "sourceSha256": "6b587295f67559dea5b4590edb17cc5f2e6201be983160ac75faa004c819a5b8",
+      "targetSha256": "6b587295f67559dea5b4590edb17cc5f2e6201be983160ac75faa004c819a5b8"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/flaky-tests.md",
+      "source": "ai-specs/skills/playwright-skill/core/flaky-tests.md",
+      "sourceSha256": "6f124ea37ed047308b08864dc0346d7cbaca2c67fcc649dbbc61722df8cc83ef",
+      "targetSha256": "6f124ea37ed047308b08864dc0346d7cbaca2c67fcc649dbbc61722df8cc83ef"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/forms-and-validation.md",
+      "source": "ai-specs/skills/playwright-skill/core/forms-and-validation.md",
+      "sourceSha256": "d889a06e388ec5577ee0fa42fa70c869640dff0273510956c37342fb449ef430",
+      "targetSha256": "d889a06e388ec5577ee0fa42fa70c869640dff0273510956c37342fb449ef430"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/i18n-and-localization.md",
+      "source": "ai-specs/skills/playwright-skill/core/i18n-and-localization.md",
+      "sourceSha256": "b308d8e6530cbf8d6b3adef2454c5324a17ac77f6b19189b79ab9fdc44ef1f74",
+      "targetSha256": "b308d8e6530cbf8d6b3adef2454c5324a17ac77f6b19189b79ab9fdc44ef1f74"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/iframes-and-shadow-dom.md",
+      "source": "ai-specs/skills/playwright-skill/core/iframes-and-shadow-dom.md",
+      "sourceSha256": "1e369ee9bdc42e57938b985bec8ef1a7d78e0a87c62d108f64e42cc9c1752b99",
+      "targetSha256": "1e369ee9bdc42e57938b985bec8ef1a7d78e0a87c62d108f64e42cc9c1752b99"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/locator-strategy.md",
+      "source": "ai-specs/skills/playwright-skill/core/locator-strategy.md",
+      "sourceSha256": "c6f8d7f318e961bc8c5aea03e0e51cb687fe819f938efcb09940496b589b1143",
+      "targetSha256": "c6f8d7f318e961bc8c5aea03e0e51cb687fe819f938efcb09940496b589b1143"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/locators.md",
+      "source": "ai-specs/skills/playwright-skill/core/locators.md",
+      "sourceSha256": "835d92b7526f70f351261762fbf7983a26b786f035745a4717e0a86ddf3f5163",
+      "targetSha256": "835d92b7526f70f351261762fbf7983a26b786f035745a4717e0a86ddf3f5163"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/mobile-and-responsive.md",
+      "source": "ai-specs/skills/playwright-skill/core/mobile-and-responsive.md",
+      "sourceSha256": "5838d4ac8819e8db206d39b16442fc54152b1ab70a28642dfc9779dff659c8fd",
+      "targetSha256": "5838d4ac8819e8db206d39b16442fc54152b1ab70a28642dfc9779dff659c8fd"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/multi-context-and-popups.md",
+      "source": "ai-specs/skills/playwright-skill/core/multi-context-and-popups.md",
+      "sourceSha256": "03435df567726c17553b1a48c84338096cd18b55dc5963e1e132647ad3060aec",
+      "targetSha256": "03435df567726c17553b1a48c84338096cd18b55dc5963e1e132647ad3060aec"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/multi-user-and-collaboration.md",
+      "source": "ai-specs/skills/playwright-skill/core/multi-user-and-collaboration.md",
+      "sourceSha256": "da2a1903faf7142ef4430cbe70cd4870b63f6d1fa1b1c5722b27e52aa9b3fa3a",
+      "targetSha256": "da2a1903faf7142ef4430cbe70cd4870b63f6d1fa1b1c5722b27e52aa9b3fa3a"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/network-mocking.md",
+      "source": "ai-specs/skills/playwright-skill/core/network-mocking.md",
+      "sourceSha256": "65103d94dc97d45c4be00e7935bc8beab2bff94856609a638f36ace09f382bea",
+      "targetSha256": "65103d94dc97d45c4be00e7935bc8beab2bff94856609a638f36ace09f382bea"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/nextjs.md",
+      "source": "ai-specs/skills/playwright-skill/core/nextjs.md",
+      "sourceSha256": "b65c147f0281871b4467a78a2cfe9db04f967afe7a34b06a1c148a20080c8ee9",
+      "targetSha256": "b65c147f0281871b4467a78a2cfe9db04f967afe7a34b06a1c148a20080c8ee9"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/performance-testing.md",
+      "source": "ai-specs/skills/playwright-skill/core/performance-testing.md",
+      "sourceSha256": "48876ffdd84b07c834f4ea5497e322e1aaa2232808c699c086d1c821a47e9ccb",
+      "targetSha256": "48876ffdd84b07c834f4ea5497e322e1aaa2232808c699c086d1c821a47e9ccb"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/react.md",
+      "source": "ai-specs/skills/playwright-skill/core/react.md",
+      "sourceSha256": "15587ad60e364fbae54b7b730394d16163dc5423adbef1c8e3dd3b98e634a14d",
+      "targetSha256": "15587ad60e364fbae54b7b730394d16163dc5423adbef1c8e3dd3b98e634a14d"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/search-and-filter.md",
+      "source": "ai-specs/skills/playwright-skill/core/search-and-filter.md",
+      "sourceSha256": "ef43ab3ee77a0a7d198253623b7efdc07a5abaaf5aa627c3a172eaf1bfa98ebd",
+      "targetSha256": "ef43ab3ee77a0a7d198253623b7efdc07a5abaaf5aa627c3a172eaf1bfa98ebd"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/security-testing.md",
+      "source": "ai-specs/skills/playwright-skill/core/security-testing.md",
+      "sourceSha256": "eccd23ac9f0e1426f39c141dfe4b045a759223f17cf9c6574c5231ef0176bee3",
+      "targetSha256": "eccd23ac9f0e1426f39c141dfe4b045a759223f17cf9c6574c5231ef0176bee3"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/service-workers-and-pwa.md",
+      "source": "ai-specs/skills/playwright-skill/core/service-workers-and-pwa.md",
+      "sourceSha256": "c92e2d1046f2bd1eaffe86a8ee464f2c8b2fb62cf599447263da28b198356ad7",
+      "targetSha256": "c92e2d1046f2bd1eaffe86a8ee464f2c8b2fb62cf599447263da28b198356ad7"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/test-architecture.md",
+      "source": "ai-specs/skills/playwright-skill/core/test-architecture.md",
+      "sourceSha256": "a36b1e09a1ef572f276adb3d9e1cae0a53233220bc45a6d830e2f4dd47c6d1f4",
+      "targetSha256": "a36b1e09a1ef572f276adb3d9e1cae0a53233220bc45a6d830e2f4dd47c6d1f4"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/test-data-management.md",
+      "source": "ai-specs/skills/playwright-skill/core/test-data-management.md",
+      "sourceSha256": "2d1b9e2ec3d0e40741e0b26a57d67f71ecd68b05231b6e4d21661b5c93057576",
+      "targetSha256": "2d1b9e2ec3d0e40741e0b26a57d67f71ecd68b05231b6e4d21661b5c93057576"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/test-organization.md",
+      "source": "ai-specs/skills/playwright-skill/core/test-organization.md",
+      "sourceSha256": "6efbe0fad1dc156e80348bc0fadd70d1071aee9513da6e183808b5a6e5131d44",
+      "targetSha256": "6efbe0fad1dc156e80348bc0fadd70d1071aee9513da6e183808b5a6e5131d44"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/third-party-integrations.md",
+      "source": "ai-specs/skills/playwright-skill/core/third-party-integrations.md",
+      "sourceSha256": "de1134fdcad478b8273f1e6c808a721d1505daeaf73e49911b62d8a71aaf2907",
+      "targetSha256": "de1134fdcad478b8273f1e6c808a721d1505daeaf73e49911b62d8a71aaf2907"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/trace-analysis.md",
+      "source": "ai-specs/skills/playwright-skill/core/trace-analysis.md",
+      "sourceSha256": "7ac462fb83b48f3e7fe1b9e3a02b779c49eedded0157f3116d3bda1808247a4d",
+      "targetSha256": "7ac462fb83b48f3e7fe1b9e3a02b779c49eedded0157f3116d3bda1808247a4d"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/visual-regression.md",
+      "source": "ai-specs/skills/playwright-skill/core/visual-regression.md",
+      "sourceSha256": "6c51dbca7c784da928817a902e3eb9e6b88bee3999c919cb703e0cb8c7aab184",
+      "targetSha256": "6c51dbca7c784da928817a902e3eb9e6b88bee3999c919cb703e0cb8c7aab184"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/vue.md",
+      "source": "ai-specs/skills/playwright-skill/core/vue.md",
+      "sourceSha256": "6f08d58b4cde88454ecca7a83b4fe5bab0a6fa38ab8111f7533f6fb9211032e8",
+      "targetSha256": "6f08d58b4cde88454ecca7a83b4fe5bab0a6fa38ab8111f7533f6fb9211032e8"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/websockets-and-realtime.md",
+      "source": "ai-specs/skills/playwright-skill/core/websockets-and-realtime.md",
+      "sourceSha256": "2f76ac9a5b92e941fe7bdcf14de86cdb60302b7411adb26e2cc964248fe1450b",
+      "targetSha256": "2f76ac9a5b92e941fe7bdcf14de86cdb60302b7411adb26e2cc964248fe1450b"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/core/when-to-mock.md",
+      "source": "ai-specs/skills/playwright-skill/core/when-to-mock.md",
+      "sourceSha256": "3a18b1bac8045da43cc3aeb4b4898f8a634399b2262372b079b54c2646168a90",
+      "targetSha256": "3a18b1bac8045da43cc3aeb4b4898f8a634399b2262372b079b54c2646168a90"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/migration/SKILL.md",
+      "source": "ai-specs/skills/playwright-skill/migration/SKILL.md",
+      "sourceSha256": "88ec8964a8601cf0980c776e7bd71629948d7df1e3ac02632a265fbd9015c49e",
+      "targetSha256": "88ec8964a8601cf0980c776e7bd71629948d7df1e3ac02632a265fbd9015c49e"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/migration/from-cypress.md",
+      "source": "ai-specs/skills/playwright-skill/migration/from-cypress.md",
+      "sourceSha256": "be719636e0b2ba9768968cd0529f7fe955d227efc92d4f2ae05f137caf1aa7df",
+      "targetSha256": "be719636e0b2ba9768968cd0529f7fe955d227efc92d4f2ae05f137caf1aa7df"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/migration/from-selenium.md",
+      "source": "ai-specs/skills/playwright-skill/migration/from-selenium.md",
+      "sourceSha256": "02f05c1b7479bf5d61f04541d3cdd5f1a77b9a9b24746fea9d274021118510cb",
+      "targetSha256": "02f05c1b7479bf5d61f04541d3cdd5f1a77b9a9b24746fea9d274021118510cb"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/SKILL.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/SKILL.md",
+      "sourceSha256": "6cee5e8f18edff7a2ad16d34d7b43a2e2ff5e58946f791473b040ed0b2eba01e",
+      "targetSha256": "6cee5e8f18edff7a2ad16d34d7b43a2e2ff5e58946f791473b040ed0b2eba01e"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/advanced-workflows.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/advanced-workflows.md",
+      "sourceSha256": "b8cc19886e8ba990ebd418e3217bf8eefb3f3d651b73e606eadb95d21f4ac9a8",
+      "targetSha256": "b8cc19886e8ba990ebd418e3217bf8eefb3f3d651b73e606eadb95d21f4ac9a8"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/core-commands.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/core-commands.md",
+      "sourceSha256": "05731721cdf1217d7880a3279a24eab4c8c5353347cc616924241af733c43053",
+      "targetSha256": "05731721cdf1217d7880a3279a24eab4c8c5353347cc616924241af733c43053"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/device-emulation.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/device-emulation.md",
+      "sourceSha256": "d5954f27b00f9fc195d7e61a4c39790a174c4a10257082f98f8b635929138903",
+      "targetSha256": "d5954f27b00f9fc195d7e61a4c39790a174c4a10257082f98f8b635929138903"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/request-mocking.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/request-mocking.md",
+      "sourceSha256": "a6d6eddce3ac7472cd85b127e258b8200edf19a2753af2181cca4074b10a88e0",
+      "targetSha256": "a6d6eddce3ac7472cd85b127e258b8200edf19a2753af2181cca4074b10a88e0"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/running-custom-code.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/running-custom-code.md",
+      "sourceSha256": "4dc1bfa6ed5143a58d7bfce6380b7ae1cbb790fddfe2f2ef9d8932ef0ee09339",
+      "targetSha256": "4dc1bfa6ed5143a58d7bfce6380b7ae1cbb790fddfe2f2ef9d8932ef0ee09339"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/screenshots-and-media.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/screenshots-and-media.md",
+      "sourceSha256": "88c8a7bbcd26befb5d8c7a3f217b794bfa374ccb8d306c01fd7cf1fbc553d5d7",
+      "targetSha256": "88c8a7bbcd26befb5d8c7a3f217b794bfa374ccb8d306c01fd7cf1fbc553d5d7"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/session-management.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/session-management.md",
+      "sourceSha256": "f8310fab5299cce460cd41142b421082f9056efcbc9309e01ca5ea91555b857a",
+      "targetSha256": "f8310fab5299cce460cd41142b421082f9056efcbc9309e01ca5ea91555b857a"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/storage-and-auth.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/storage-and-auth.md",
+      "sourceSha256": "c68d628c63b80efe7d900170e86868303fb59b4e5f2f5e08e435b38e982d9981",
+      "targetSha256": "c68d628c63b80efe7d900170e86868303fb59b4e5f2f5e08e435b38e982d9981"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/test-generation.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/test-generation.md",
+      "sourceSha256": "60811c8d885041d9a7b3e44a8aec158916d540857831ec9cb379f22392a4a714",
+      "targetSha256": "60811c8d885041d9a7b3e44a8aec158916d540857831ec9cb379f22392a4a714"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/playwright-cli/tracing-and-debugging.md",
+      "source": "ai-specs/skills/playwright-skill/playwright-cli/tracing-and-debugging.md",
+      "sourceSha256": "86e6943e6082393265dbcd249c2beaf70a128600f1028934bb5ccd6041018b1b",
+      "targetSha256": "86e6943e6082393265dbcd249c2beaf70a128600f1028934bb5ccd6041018b1b"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/pom/SKILL.md",
+      "source": "ai-specs/skills/playwright-skill/pom/SKILL.md",
+      "sourceSha256": "e1147d948841e920674a2ec496290bc30af73101ceb5dc80282dd74019decb69",
+      "targetSha256": "e1147d948841e920674a2ec496290bc30af73101ceb5dc80282dd74019decb69"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/pom/page-object-model.md",
+      "source": "ai-specs/skills/playwright-skill/pom/page-object-model.md",
+      "sourceSha256": "b0a38a0ad8d58fd8f62a1e64b035ec6f9dc7fae58602764d7c9aea10a2188626",
+      "targetSha256": "b0a38a0ad8d58fd8f62a1e64b035ec6f9dc7fae58602764d7c9aea10a2188626"
+    },
+    {
+      "path": "ai-specs/skills/playwright-skill/pom/pom-vs-fixtures-vs-helpers.md",
+      "source": "ai-specs/skills/playwright-skill/pom/pom-vs-fixtures-vs-helpers.md",
+      "sourceSha256": "c286028ded866a59511d3c898cbe2141d4b38183fc9afa8136d16230e9b251e1",
+      "targetSha256": "c286028ded866a59511d3c898cbe2141d4b38183fc9afa8136d16230e9b251e1"
+    },
+    {
+      "path": "ai-specs/skills/quick-change/SKILL.md",
+      "source": "ai-specs/skills/quick-change/SKILL.md",
+      "sourceSha256": "e35d739dc58be1a3a33c9bf289a3d334e6866a550c2b7da24947a864c6a543a0",
+      "targetSha256": "e35d739dc58be1a3a33c9bf289a3d334e6866a550c2b7da24947a864c6a543a0"
+    },
+    {
+      "path": "ai-specs/skills/show-spec-working/SKILL.md",
+      "source": "ai-specs/skills/show-spec-working/SKILL.md",
+      "sourceSha256": "e78b1863ce363595471e403fa61d26ef8d4ece3a990177343c448c16492d13b8",
+      "targetSha256": "e78b1863ce363595471e403fa61d26ef8d4ece3a990177343c448c16492d13b8"
+    },
+    {
+      "path": "ai-specs/skills/sync-agent-symlinks/SKILL.md",
+      "source": "ai-specs/skills/sync-agent-symlinks/SKILL.md",
+      "sourceSha256": "aea9f4ab4db1e86804def9b4b7e4ca3b04f59491e5cecb549f6813c92e35d481",
+      "targetSha256": "aea9f4ab4db1e86804def9b4b7e4ca3b04f59491e5cecb549f6813c92e35d481"
+    },
+    {
+      "path": "ai-specs/skills/update-docs/SKILL.md",
+      "source": "ai-specs/skills/update-docs/SKILL.md",
+      "sourceSha256": "49d6cd5fc302887e0ae084ebce43ed3e2d497f10e7af3fe623370c5f8780bf09",
+      "targetSha256": "49d6cd5fc302887e0ae084ebce43ed3e2d497f10e7af3fe623370c5f8780bf09"
+    },
+    {
+      "path": "ai-specs/skills/using-git-worktrees/SKILL.md",
+      "source": "ai-specs/skills/using-git-worktrees/SKILL.md",
+      "sourceSha256": "0941d2633846c560b3bc1e90da47b2b2957cf17894afc0ab92b13a8d660641e1",
+      "targetSha256": "0941d2633846c560b3bc1e90da47b2b2957cf17894afc0ab92b13a8d660641e1"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/SKILL.md",
+      "source": "ai-specs/skills/writing-skills/SKILL.md",
+      "sourceSha256": "38ba648975ae6ba512d6695676f146163db61a496b867f716f4bdfb0ee3aca3e",
+      "targetSha256": "38ba648975ae6ba512d6695676f146163db61a496b867f716f4bdfb0ee3aca3e"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/anthropic-best-practices.md",
+      "source": "ai-specs/skills/writing-skills/anthropic-best-practices.md",
+      "sourceSha256": "20914c2fda31670c75fe91710e18a53d413ce0d00b5102acfa251d75c9226e3f",
+      "targetSha256": "20914c2fda31670c75fe91710e18a53d413ce0d00b5102acfa251d75c9226e3f"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
+      "source": "ai-specs/skills/writing-skills/examples/CLAUDE_MD_TESTING.md",
+      "sourceSha256": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0",
+      "targetSha256": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/graphviz-conventions.dot",
+      "source": "ai-specs/skills/writing-skills/graphviz-conventions.dot",
+      "sourceSha256": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694",
+      "targetSha256": "e2890a593c91370e384b42f2f67b1a6232c9e69dddea7891a0c1c46d7b20b694"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/persuasion-principles.md",
+      "source": "ai-specs/skills/writing-skills/persuasion-principles.md",
+      "sourceSha256": "c3c84f572a51dd8b6d4fc6e5cbdc2bc3b9e07ba381a45bdabfce7ad2894dd828",
+      "targetSha256": "c3c84f572a51dd8b6d4fc6e5cbdc2bc3b9e07ba381a45bdabfce7ad2894dd828"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/render-graphs.js",
+      "source": "ai-specs/skills/writing-skills/render-graphs.js",
+      "sourceSha256": "ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852",
+      "targetSha256": "ccda971a87bb185f8febf81c56b556a20d026fa980c17b35fa3e8824fbb37852"
+    },
+    {
+      "path": "ai-specs/skills/writing-skills/testing-skills-with-subagents.md",
+      "source": "ai-specs/skills/writing-skills/testing-skills-with-subagents.md",
+      "sourceSha256": "c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade",
+      "targetSha256": "c711346852c911b24a84aa161e0cff06a4cd7f4e2fa9e9c0a266cead5afcbade"
+    },
+    {
+      "path": "ai-specs/specboot-instructions.md",
+      "source": "ai-specs/specboot-instructions.md",
+      "sourceSha256": "08ed23be288bfca5d4d3ba3ec435c0dcbae940cb9f73750f02ee870bd646b190",
+      "targetSha256": "08ed23be288bfca5d4d3ba3ec435c0dcbae940cb9f73750f02ee870bd646b190"
+    },
+    {
+      "path": "docs/api-spec.yml",
+      "source": "docs/api-spec.yml",
+      "sourceSha256": "3338854c3b3949085bcf91a04838275da1fed35d7aeee842e9fc0fd945f7a3f8",
+      "targetSha256": "3338854c3b3949085bcf91a04838275da1fed35d7aeee842e9fc0fd945f7a3f8"
+    },
+    {
+      "path": "docs/backend-standards.md",
+      "source": "docs/backend-standards.md",
+      "sourceSha256": "066c88c53c968d40e665985ffc2647d381472fd94c1b5fcd7c377f5c285f3202",
+      "targetSha256": "066c88c53c968d40e665985ffc2647d381472fd94c1b5fcd7c377f5c285f3202"
+    },
+    {
+      "path": "docs/base-standards.md",
+      "source": "docs/base-standards.md",
+      "sourceSha256": "e32ef93617c71cfa7c3b0cf0c00fa2aff5f5422480030aa992a8c5abb6837cf6",
+      "targetSha256": "e32ef93617c71cfa7c3b0cf0c00fa2aff5f5422480030aa992a8c5abb6837cf6"
+    },
+    {
+      "path": "docs/data-model.md",
+      "source": "docs/data-model.md",
+      "sourceSha256": "531db97745b71f2647255a7f691a659994a4fbbbd1cfdab537faba5ff8503201",
+      "targetSha256": "531db97745b71f2647255a7f691a659994a4fbbbd1cfdab537faba5ff8503201"
+    },
+    {
+      "path": "docs/development_guide.md",
+      "source": "docs/development_guide.md",
+      "sourceSha256": "5ed057d07092bffa4adff6d20d69d1c37b75915bbdeb6d0301636fc4e1441288",
+      "targetSha256": "5ed057d07092bffa4adff6d20d69d1c37b75915bbdeb6d0301636fc4e1441288"
+    },
+    {
+      "path": "docs/documentation-standards.md",
+      "source": "docs/documentation-standards.md",
+      "sourceSha256": "9a50d421aa2c8302e78e434f3012dbeb1cf9a5d4d3fddc020c3138d8879ded16",
+      "targetSha256": "9a50d421aa2c8302e78e434f3012dbeb1cf9a5d4d3fddc020c3138d8879ded16"
+    },
+    {
+      "path": "docs/frontend-standards.md",
+      "source": "docs/frontend-standards.md",
+      "sourceSha256": "7aafe35bd052ef5cdc9e2b8c5d31a39862d61222e6efb1b30ab69aad55758575",
+      "targetSha256": "7aafe35bd052ef5cdc9e2b8c5d31a39862d61222e6efb1b30ab69aad55758575"
+    },
+    {
+      "path": "docs/openspec-tasks-mandatory-steps.md",
+      "source": "docs/openspec-tasks-mandatory-steps.md",
+      "sourceSha256": "8537575111ee1f6cbb6a9c3e489ccfd0ceb4eb5ab2a7fcbbc429b2010574d3ee",
+      "targetSha256": "8537575111ee1f6cbb6a9c3e489ccfd0ceb4eb5ab2a7fcbbc429b2010574d3ee"
+    }
+  ]
+}

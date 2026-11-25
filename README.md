@@ -1,3 +1,5 @@
+> **Maintaining Specboot itself:** Start with [SELF-MAINTENANCE.md](SELF-MAINTENANCE.md). Canonical sources generate the customer template; the source repository now has its own proposed SDD contracts, self-checks and Linux CI. Customer adoption instructions below remain separate.
+
 # Specboot: Augmented Spec-driven development
 
 ![Specboot](https://drive.google.com/uc?export=view&id=1yic8hwSzSyQE6Zmf6__YNBcBvqiHMGEr)

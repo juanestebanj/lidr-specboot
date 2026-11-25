@@ -34,3 +34,13 @@ Not a ratified baseline or proof of runtime behavior. All workflow entries are i
 | update-docs | ai-specs/skills/update-docs/SKILL.md | Implemented change | Affected technical docs | Instruction inspection |
 | using-git-worktrees | ai-specs/skills/using-git-worktrees/SKILL.md | Feature work | Isolated workspace | Instruction inspection |
 | writing-skills | ai-specs/skills/writing-skills/SKILL.md | Skill creation/edit | Skill and verification guidance | Instruction inspection |
+
+## Proposed self-manufacturing capabilities
+
+| Area | Source | Verification |
+| --- | --- | --- |
+| Canonical template generation and drift | scripts/build-template.cjs | T31-T40 |
+| Pinned fail-closed self-check | scripts/self-check.cjs; package-lock.json | T41-T44 |
+| Packed product and boundary | scripts/check-package.cjs | T45-T47; native Linux required for product install |
+| Linux conformance | .github/workflows/self-maintenance.yml | CI run evidence, not instruction inspection |
+| Source AI improvement loop | SELF-MAINTENANCE.md | Guidance inspection; live agent compliance is not mechanically proven |

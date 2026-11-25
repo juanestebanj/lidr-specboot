@@ -1,0 +1,27 @@
+TAP version 13
+# Subtest: T47: actual packed toolkit installs offline and manufactures a disposable customer project
+not ok 1 - T47: actual packed toolkit installs offline and manufactures a disposable customer project
+  ---
+  duration_ms: 4.9043
+  type: 'test'
+  location: 'C:\\Users\\jjara\\Documents\\Codex\\2026-11-25\\new-chat\\factory-repo\\tests\\self-check.test.cjs:61:1'
+  failureType: 'testCodeFailure'
+  error: 'smokePackage is not a function'
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\jjara\Documents\Codex\2026-11-25\new-chat\factory-repo\tests\self-check.test.cjs:63:18)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.start (node:internal/test_runner/test:1177:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 138.9421

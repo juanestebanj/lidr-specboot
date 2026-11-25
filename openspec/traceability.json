@@ -615,6 +615,149 @@
       ],
       "reason": "Repeated simulated-link install checks status zero, zero copies and preserved customer bytes.",
       "kind": "runtime"
+    },
+    {
+      "id": "MFG-01-S01",
+      "requirement": "MFG-01",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/build-template.cjs"
+      ],
+      "tests": [
+        "T31",
+        "T39"
+      ],
+      "kind": "runtime",
+      "reason": "Canonical byte copy and source-only boundary are exercised."
+    },
+    {
+      "id": "MFG-01-S02",
+      "requirement": "MFG-01",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/build-template.cjs"
+      ],
+      "tests": [
+        "T35",
+        "T36",
+        "T37"
+      ],
+      "kind": "runtime",
+      "reason": "Real filesystem links must be refused before mutation; Linux execution required."
+    },
+    {
+      "id": "MFG-02-S01",
+      "requirement": "MFG-02",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/build-template.cjs"
+      ],
+      "tests": [
+        "T31",
+        "T32"
+      ],
+      "kind": "runtime",
+      "reason": "Exact digests and identical repeated output are checked."
+    },
+    {
+      "id": "MFG-03-S01",
+      "requirement": "MFG-03",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/build-template.cjs"
+      ],
+      "tests": [
+        "T33",
+        "T34",
+        "T40"
+      ],
+      "kind": "runtime",
+      "reason": "Changed, missing, extra and manifest drift are tested without check-mode repairs."
+    },
+    {
+      "id": "MFG-04-S01",
+      "requirement": "MFG-04",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/self-check.cjs",
+        "package.json"
+      ],
+      "tests": [
+        "T41",
+        "T42",
+        "T43",
+        "T44"
+      ],
+      "kind": "runtime",
+      "reason": "Injected child statuses and missing/mismatched dependencies exercise fail-closed control flow."
+    },
+    {
+      "id": "MFG-05-S01",
+      "requirement": "MFG-05",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        ".github/workflows/self-maintenance.yml",
+        "package-lock.json"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "CI configuration is inspected; actual GitHub execution evidence is separate."
+    },
+    {
+      "id": "MFG-06-S01",
+      "requirement": "MFG-06",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/check-package.cjs",
+        "packages/specboot/package.json"
+      ],
+      "tests": [
+        "T45",
+        "T46"
+      ],
+      "kind": "runtime",
+      "reason": "Positive payload and escaping/source-only/missing/duplicate negatives are exercised."
+    },
+    {
+      "id": "MFG-07-S01",
+      "requirement": "MFG-07",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "SELF-MAINTENANCE.md",
+        "openspec/config.yaml"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Guidance inspection does not prove live AI compliance or reviewer identity."
+    },
+    {
+      "id": "MFG-08-S01",
+      "requirement": "MFG-08",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js",
+        "tests/self-spec.test.cjs"
+      ],
+      "tests": [
+        "T03",
+        "T05"
+      ],
+      "kind": "runtime",
+      "reason": "Native disposable installation and preservation tests require real symlinks."
+    },
+    {
+      "id": "MFG-08-S02",
+      "requirement": "MFG-08",
+      "spec": "openspec/changes/self-manufacture-sdd/specs/self-manufacturing/spec.md",
+      "sources": [
+        "scripts/check-package.cjs",
+        "tests/self-check.test.cjs"
+      ],
+      "tests": [
+        "T47"
+      ],
+      "kind": "runtime",
+      "reason": "Actual npm tarball is installed offline, then its installed executable and repeat preservation are exercised; native Linux run required."
     }
   ]
 }

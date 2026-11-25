@@ -35,7 +35,7 @@ test('T01: specification structure, unique IDs and traceability', () => {
 test('T02: manifest defines package payload and installer', () => {
   const pkg = JSON.parse(read('packages/specboot/package.json'));
   assert.equal(pkg.bin['lidr-specboot'], './bin/init.js');
-  assert.deepEqual(pkg.files, ['bin/', 'template/']);
+  assert.deepEqual(pkg.files, ['bin/', 'template/', 'template-manifest.json']);
   assert.equal(pkg.engines.node, '>=18');
 });
 test('T03: clean explicit install copies template and creates correct links, not self-specs', () => temporary(dir => {
