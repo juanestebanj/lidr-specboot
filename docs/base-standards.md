@@ -70,3 +70,8 @@ Required order:
 
 Do not apply direct code-only fixes in this window without updating OpenSpec artifacts.
 
+
+
+## 8. Specboot source repository self-application
+
+When this checkout contains `openspec/self-specification.md`, read that guide and `openspec/config.yaml` before changing Specboot itself. Use the repository's capability specifications and active change artifacts; apply the repository-specific QA applicability rules there rather than the example customer application's stack. This section is scoped to the Specboot source repository; do not install its self-specifications into customer projects. For changes to Specboot itself, baseline-aware maintenance takes precedence over Jira greenfield restrictions. Use implementation-only tasks.md and separate acceptance.md gates. Independent review and maintainer acceptance are required before separately authorized archival.

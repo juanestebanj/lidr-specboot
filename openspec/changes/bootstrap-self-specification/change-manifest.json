@@ -1,0 +1,240 @@
+{
+  "basis": "lidr-specboot-self-specified.zip",
+  "excludes": [
+    "openspec/changes/bootstrap-self-specification/change-manifest.json (self-reference)"
+  ],
+  "changes": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "6d5aa9616f6c2cf1f4f15a1cfc05251e59700917e33cea6a670a28d69dcece4f",
+      "new_sha256": "24164b824d241123f652cda9294652ff3b324ef07e04fa58268bcf906affe73c"
+    },
+    {
+      "path": "ai-specs/skills/factory/SKILL.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "c87cd60cf7bc5a13e7215e0b6321e4cbed3e55fcde1372ad3dfb068e40338a14",
+      "new_sha256": "ee2f387f0eca7da2cf4084820fb7cf40eab6fb8198e575138f04587e8d980748"
+    },
+    {
+      "path": "ai-specs/specboot-instructions.md",
+      "change": "modified",
+      "old_type": "symlink",
+      "new_type": "file",
+      "old_sha256": "dbcc210d7f4962499db6d4cfa18658e26d05ee700c962a811cac911f095e22fd",
+      "new_sha256": "08ed23be288bfca5d4d3ba3ec435c0dcbae940cb9f73750f02ee870bd646b190"
+    },
+    {
+      "path": "docs/base-standards.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "4a16f87285a9006a6c62ce40db720f3c6fad27b8a03a7e9b2ae3ca2b482511d1",
+      "new_sha256": "e32ef93617c71cfa7c3b0cf0c00fa2aff5f5422480030aa992a8c5abb6837cf6"
+    },
+    {
+      "path": "docs/openspec-tasks-mandatory-steps.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "40fac254719449de7aff574cd6ad233785f0e274fed44cdb15b6d05beadde006",
+      "new_sha256": "8537575111ee1f6cbb6a9c3e489ccfd0ceb4eb5ab2a7fcbbc429b2010574d3ee"
+    },
+    {
+      "path": "openspec/capability-inventory.md",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "91a30b08f5d0cafa2a06f3808a66f4af1aa8184693aa3e44723f5a048b2a0d98"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/acceptance.md",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "6e8cb302e5ab918c4447e0317b2d188bafe42e7cfbdfb88189e38337d9f6118d"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/design.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "47758a1aab7543b1eb79a90f8f07ac29178d9cb5320aee6e736b2b9beaed0992",
+      "new_sha256": "b1518169f2d8883011458ffbdaf46d3c6093bd170f71066c6fd8d4fb70a331e0"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/npm-pack-dry-run.json",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "abd028841f7a4b45fd97c3da6cf61b20d1d113e0974f7f5983bdd29811ae56c2"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/proposal.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "b196d2ba031b467d8675d9a712ee6374461e43b32b489ccfa6689588f6334f8b",
+      "new_sha256": "770d3f6efa0ceaa98fe2df7ee1fe0cee4db2729db66ff45402d949669b706989"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/remediation.md",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "852dfc91941dc6c3b8c5bc864aee3bc7e1fa79e442b3957f61de3fa7d4d016cf"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/specification-before-implementation.sha256",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "7e9ace548af0b7a6374a8bfe778fbb6fe0548d21b784970cbb42a7328e0c5c20"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/specs/maintenance-capability-inventory/spec.md",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "e3c6c0e08d490ae98615fb22d51de65159823367acc2d00b4ed4efbb40accd0c"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "2680710ffee509a5cba084d1676dfd023da037b35d372d7ff04e8a4b10c6ed68",
+      "new_sha256": "985d1d4c50496dae4a9e2acd96ff772316ce6de5b022f4950907783c8b4d23dd"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/tasks.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "928e4ccd2e3ec3c54f70305afcfb4e65cbf87b76ae0556e8e1dbd89de26cd9db",
+      "new_sha256": "700f402d1acd2ba36733b24d5de10beb7773339b1164eb2611cf1e6655363f69"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/test-output.txt",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "8546209d83fb4eb76cda590c295f7e365d69143c761db4d7f20fd9b6233150a8"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/verification-initial.md",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "ec698eb7ae21aaaa0027161cc9e1a7e6b4fae6e8e9731d8bd9049703a4a279c1"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/verification.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "ec698eb7ae21aaaa0027161cc9e1a7e6b4fae6e8e9731d8bd9049703a4a279c1",
+      "new_sha256": "2e1d168da541faa433cb34a0f7862b4fbb0579a726a5d9c36c6782807ae367ba"
+    },
+    {
+      "path": "openspec/config.yaml",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "e1c6093e9ddd9f109daeb0ef8f0412beb42444fe76412259098545784352c72b",
+      "new_sha256": "e8fd0db0810a9a4f2ab783dc7bdf231949307549a4b2503c14e041b15fb1a121"
+    },
+    {
+      "path": "openspec/self-specification.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "6f6a096b4b2b95bdb1b03c5183407ff7a0b5a54534ad6c236ac264c44cb05e31",
+      "new_sha256": "1d9ad72aa317c752fee592f6c8c370364c728b479c30801dcbd5511fcfe2d1ff"
+    },
+    {
+      "path": "openspec/specs/agent-workflow/spec.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "206976e2825abbdca32df9f9215d54b39ebd338aee8b151b4e4f54bd220ba893",
+      "new_sha256": "e45d2bb8fde14a21c6d0eff20892d85961f36dd7ad411a987b6ed397e9f04efd"
+    },
+    {
+      "path": "openspec/specs/engineering-knowledge/spec.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "6ae42ab3657893cccadf877b42b4c54f07341639a9febde9b2ed188c492cd293",
+      "new_sha256": "2e949b295f841151f15ace53bff98b550f7a239d7eb2fb61dcf2e92fdc480503"
+    },
+    {
+      "path": "openspec/specs/installation/spec.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "3d3ab346a67ac6336d65416e6e9c91e8a33ee5426290ad58815a06ff3ee932a8",
+      "new_sha256": "f32b591a1ccf11bf8d5e5255da9c606380f8a9d59dbf0d8d51ebba2f855324f6"
+    },
+    {
+      "path": "openspec/specs/onboarding/spec.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "0abab1a78f54390e44fbdf15af9458b5ae3312e1815e8e0cbfa19eabc347c0aa",
+      "new_sha256": "c4b952ed0ce8e925da1ec3a7aa2b456ef16ea21d96807390b4f49c997c3f1c28"
+    },
+    {
+      "path": "openspec/specs/quality-assurance/spec.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "8629da3a6f77f875ef3011cd01849fd23f6ecd3891ec791afe5c896a2d4a401f",
+      "new_sha256": "7c7b5fe955d7382cb9b2abd5c9448e26097242059511e549ba57ec30a4746a91"
+    },
+    {
+      "path": "openspec/traceability.json",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "ec42391b5d83cfb6465738f9cbab2196c5a3c0f7d1cd1e2738d25b0f34e09cc0"
+    },
+    {
+      "path": "openspec/traceability.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "60c1318c922f4448752f3aff578ea080fd69f29eb4d4e31050e5710a6e53a300",
+      "new_sha256": "2900ae139be0241c1d77aa6375689c0195588e2552b1ed93229fd33ce11d45bc"
+    },
+    {
+      "path": "scripts/manual-import.cjs",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "968c891c93ce86f8926db90cf33bbc6a658fbf610ff6ea97c912f2a6dab352d5"
+    },
+    {
+      "path": "scripts/validate-traceability.cjs",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "084034a4c9619d6d701d54222560c796a31b285385af39a7f2023931a1d683db"
+    },
+    {
+      "path": "setup-sdd.md",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "8bd8069c9f9c5687ce8726593926fd54bbaaa39f1cacd7d9fdc47165ecc40fab",
+      "new_sha256": "c5139726f09bb2277ed48f51e6b2b3d35fbcb385aa18ab8e391e3b8a740743d5"
+    },
+    {
+      "path": "tests/remediation.test.cjs",
+      "change": "added",
+      "new_type": "file",
+      "new_sha256": "3dfae0fd0e359296d9fe28ca07514c54969f0c77ed48d7fbb105baef30401ddb"
+    },
+    {
+      "path": "tests/self-spec.test.cjs",
+      "change": "modified",
+      "old_type": "file",
+      "new_type": "file",
+      "old_sha256": "088bbae3289087ec85613e0d6dd3cdc13808a1a60f98a669963d3a38e05b7e56",
+      "new_sha256": "6da401756a4f764a24823f0e9fe3a7b52fc3c20b9932eccbb1463214cf2b4011"
+    }
+  ]
+}

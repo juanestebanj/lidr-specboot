@@ -1,0 +1,228 @@
+--- a/openspec/capability-inventory.md
++++ b/openspec/capability-inventory.md
+@@ -10,7 +10,7 @@
+ | Documentation rendering | ai-specs/skills/writing-skills/render-graphs.js | DOT graphs → rendered output; failure exit-status gap inherited; rendering not executed |
+ | Code review scripting | ai-specs/scripts/code_review.sh | Repository context/diff → review script output; external tools not executed |
+ | Documentation maintenance | ai-specs/skills/update-docs/SKILL.md; docs/documentation-standards.md | Change and affected documents → updated docs; no live agent execution |
+-| Installer failure and recovery | packages/specboot/bin/init.js | Target and template → copies, links and summary; recorded link errors may exit zero; partial writes, no rollback, symlink containment and Windows gaps inherited |
++| Installer failure and recovery | packages/specboot/bin/init.js | Target and template → copies, links and summary; recorded link errors exit 1 in proposed cycle 1; partial writes, no rollback, symlink containment and Windows gaps inherited |
+ | Manual importer | scripts/manual-import.cjs | Existing customer directory and canonical reusable paths → non-overwriting import; conflicts rejected; no transactional rollback or concurrent filesystem mutation guarantee |
+ 
+ ## Canonical skills (top-level entry points)
+--- a/openspec/changes/bootstrap-self-specification/acceptance.md
++++ b/openspec/changes/bootstrap-self-specification/acceptance.md
+@@ -12,3 +12,17 @@
+ | Synchronization and archival | PENDING | Separate authorized action only after acceptance |
+ 
+ No gate is automatically accepted. A failed review returns work to implementation, followed by a new independent review. If a reviewer or tool is unavailable, report the blocker and leave the gate pending; do not loop just to obtain approval or mark it complete. No archive, commit, Jira transition or release is authorized by this remediation.
++
++## Cycle 1 candidate gates (supersede no historical acceptance)
++
++| Gate | State | Evidence |
++| --- | --- | --- |
++| Specification and focused implementation evidence | RECORDED | reports/cycle-1/verification.md, red.txt, green.txt, mutation.txt |
++| Separate adversarial review | RECORDED; consult verdict | reports/cycle-1/independent-review.md |
++| Full native filesystem suite | BLOCKED / NOT PASSING | Windows symlink privilege unavailable; full-suite-windows.txt |
++| Official OpenSpec strict validation | PASSED | reports/cycle-1/final-openspec.txt; 6 items passed, 0 failed |
++| Git provenance / integration | PENDING | ZIP-only source; no verified Git history |
++| Maintainer acceptance | PENDING | Human decision required after adequate evidence |
++| Synchronization, archival and publication | PENDING | Separate authorized actions after acceptance |
++
++Packaging this candidate does not close release gates or claim autonomous learning.
+--- a/openspec/changes/bootstrap-self-specification/design.md
++++ b/openspec/changes/bootstrap-self-specification/design.md
+@@ -28,3 +28,14 @@
+ ## Remediation design amendment
+ 
+ The later remediation scope in remediation.md supersedes the initial design where they differ. Detect self-maintenance via source checkout and explicit task scope; preserve Jira queue selection but bypass greenfield-only restrictions for this mode. Separate apply and release gates. Use a local Node manual importer with a reusable-path allowlist, no external dependencies, conflict preflight and a regular onboarding file. Use JSON scenario mappings and a Node validator; distinguish source inspection, instruction checks and runtime tests. The inherited NPM installer remains unchanged. Roll back by restoring the preceding self-specified ZIP.
++
++## Cycle 1 design amendment
++
++EXIT-01 is implemented by assigning process.exitCode = 1 inside the existing
++recorded-error report branch. This preserves output flushing, report wording,
++copy/skip behavior and the package payload. It changes the shipped executable,
++while leaving template guidance unchanged. T28-T30 use test-only filesystem
++failure injection; native symlink behavior remains covered by the existing
++suite and must be verified on a capable environment. A removal mutant must
++reproduce the two error-status regressions. Source and template synchronization,
++rollback, path containment and autonomous agent orchestration remain outside scope.
+--- a/openspec/changes/bootstrap-self-specification/proposal.md
++++ b/openspec/changes/bootstrap-self-specification/proposal.md
+@@ -23,3 +23,13 @@
+ ## Audit remediation amendment (proposed)
+ 
+ See [remediation.md](remediation.md). Add `maintenance-capability-inventory` and strengthen the existing proposed `self-maintenance` delta. The five baseline capabilities remain provisional; scenario identifiers and the existing installer error scenario are descriptive refinements. Manual-import changes apply only to the canonical source; the NPM payload stays unchanged.
++
++## Cycle 1 scope amendment: observable installer failure
++
++The maintainer requested factory self-improvement. The bounded first cycle
++adds EXIT-01 and repairs the packaged installer's success status on recorded
++link errors. The CLI now sets process.exitCode to 1 for those errors; successful
++processing and skips retain status 0. The customer template stays unchanged.
++See self-improvement-plan.md and reports/cycle-1 for evidence and acceptance
++limits. This amendment extends the earlier bootstrap scope; it does not approve
++the baseline, release, archival or recurring autonomous changes.
+--- a/openspec/changes/bootstrap-self-specification/remediation.md
++++ b/openspec/changes/bootstrap-self-specification/remediation.md
+@@ -13,3 +13,12 @@
+ | A07 | SELF-02 and INST-04: stable scenario IDs, scenario evidence references, error-reporting scenario | T18, T26 |
+ 
+ Non-goals: installer security hardening, general template synchronization, actual agent orchestration engine, CI deployment, external installations, ratification or archival. Existing package template and CLI stay unchanged; canonical manual import receives the corrections. The old baseline is provisional, and inventory additions are not a complete behavioral specification of every skill. Official CLI validation and a separate reviewer are acceptance gates, not implementation claims.
++
++## Subsequent cycle 1 amendment (2026-11-25)
++
++The earlier non-goal preserving the CLI unchanged applies to the preceding
++remediation only. The current self-improvement cycle explicitly changes the
++installer executable to repair its recorded-error exit status under EXIT-01.
++The packaged template remains unchanged. See self-improvement-plan.md and
++reports/cycle-1 for current evidence, provenance and pending acceptance gates.
++The earlier verification logs and manifest remain historical evidence.
+--- a/openspec/changes/bootstrap-self-specification/tasks.md
++++ b/openspec/changes/bootstrap-self-specification/tasks.md
+@@ -13,3 +13,11 @@
+ - [x] 1.7 Run applicable offline tests, record results and update documentation.
+ 
+ Only implementation work belongs here. Independent review, official CLI validation, final verification, maintainer acceptance and archival are tracked in acceptance.md; none is implied by checked implementation tasks.
++
++## 2. Self-improvement cycle 1: installer exit status
++
++- [x] 2.1 Specify EXIT-01 and reproduce the unchanged installer defect (2 failing regressions, 1 passing success/repeat check).
++- [x] 2.2 Correct recorded-error exit status and align regression/traceability expectations.
++- [x] 2.3 Run focused checks and mutation regression; record platform limitations and package integrity.
++
++Cycle 1 acceptance is recorded separately; previous implementation evidence is historical.
+--- a/openspec/self-specification.md
++++ b/openspec/self-specification.md
+@@ -34,7 +34,7 @@
+ ## Known gaps, not approved fixes
+ 
+ - Canonical and packaged knowledge differ: template synchronization and distribution completeness are not guaranteed.
+-- Installer destination containment, atomic rollback, error exit status and Windows compatibility require separate investigation/remediation.
++- Installer destination containment, atomic rollback and Windows compatibility require separate investigation/remediation.
+ - Agent workflow enforcement, budgets and independent execution identity are not implemented by the installer.
+ - No existing CI or official OpenSpec validation is established by this snapshot.
+ - Existing README and factory workflow ordering differ; factory-specific ordering in FLOW-02 to FLOW-04 comes from the factory skill.
+@@ -43,3 +43,12 @@
+ ## Verify locally
+ 
+ From the repository root, with Node.js 18 or later, run `node --test tests/*.test.cjs`. These focused checks do not validate every requirement or constitute independent assurance. With an independently installed, trusted OpenSpec CLI, also run `openspec validate --all --strict` and resolve diagnostics before acceptance. See the active bootstrap change for evidence and remaining gates.
++
++## Proposed self-improvement cycle 1
++
++The active bootstrap now includes EXIT-01: recorded installer link errors return
++status 1; successful processing and existing-entry skips retain status 0.
++See changes/bootstrap-self-specification/self-improvement-plan.md and the cycle-1
++reports for the current candidate and limitations. Prior bootstrap verification
++and acceptance records remain historical; they do not approve this cycle.
++This cycle changes the packaged executable but does not synchronize template guidance.
+--- a/openspec/traceability.json
++++ b/openspec/traceability.json
+@@ -572,6 +572,49 @@
+       "tests": [],
+       "kind": "inspection",
+       "reason": "Documentation-only exception inspected."
++    },
++    {
++      "id": "EXIT-01-S01",
++      "requirement": "EXIT-01",
++      "spec": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
++      "sources": [
++        "packages/specboot/bin/init.js",
++        "tests/installer-exit-status.test.cjs"
++      ],
++      "tests": [
++        "T28",
++        "T29"
++      ],
++      "reason": "Injected single and multiple link errors check process status and retained report.",
++      "kind": "runtime"
++    },
++    {
++      "id": "EXIT-01-S02",
++      "requirement": "EXIT-01",
++      "spec": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
++      "sources": [
++        "packages/specboot/bin/init.js",
++        "tests/installer-exit-status.test.cjs"
++      ],
++      "tests": [
++        "T30"
++      ],
++      "reason": "Test-only link creation simulation isolates successful process status; native link behavior is separate.",
++      "kind": "runtime"
++    },
++    {
++      "id": "EXIT-01-S03",
++      "requirement": "EXIT-01",
++      "spec": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
++      "sources": [
++        "packages/specboot/bin/init.js",
++        "tests/installer-exit-status.test.cjs"
++      ],
++      "tests": [
++        "T30"
++      ],
++      "reason": "Repeated simulated-link install checks status zero, zero copies and preserved customer bytes.",
++      "kind": "runtime"
+     }
+   ]
+ }
+--- a/openspec/traceability.md
++++ b/openspec/traceability.md
+@@ -1,3 +1,5 @@
++> **Current candidate, cycle 1 (2026-11-25):** The original bootstrap narrative and tables below are historical. The authoritative current scenario mapping is `traceability.json`, checked by `scripts/validate-traceability.cjs`: 32 requirements, 44 scenarios and 30 test identities. EXIT-01 adds recorded-error status (T28/T29), successful processing (T30) and existing-entry preservation (T30). Focused tests use explicit test-only link injection; they do not establish native symlink installation. Current evidence, independent review and blocked release gates are in `changes/bootstrap-self-specification/reports/cycle-1/`. No historical passing log implies that the current full native suite passed.
++
+ # Scenario traceability
+ 
+ Canonical mapping: `openspec/traceability.json`. Every scenario has a stable ID, requirement and specification path, source artifacts, evidence kind and rationale. Run `node scripts/validate-traceability.cjs`. This validates reference integrity, not semantic adequacy; instruction tests do not prove agent compliance. Baseline and active deltas are provisional.
+@@ -36,7 +38,7 @@
+ | INST-02-S02 | runtime | T05 | Existing file preserved and repeat copies zero. |
+ | INST-03-S01 | runtime | T03 | Expected root and agent links checked. |
+ | INST-04-S01 | runtime | T03, T05 | Normal completion summary and counts. |
+-| INST-04-S02 | runtime | T26 | Injected link failure reported; inherited zero exit status explicitly observed. |
++| INST-04-S02 | runtime | T26 | Injected link failure reported; inherited zero exit status explicitly observed. (Historical pre-cycle observation; current cycle 1 T26 requires status 1.) |
+ | INST-05-S01 | structure | T02 | Package manifest fields; actual packaging separately checked. |
+ | ONB-01-S01 | instruction | T09, T14, T15 | Onboarding steps checked and manual import exercised; full setup not executed. |
+ | ONB-02-S01 | inspection | inspection only | Customization required; no live agent customization tested. |
+--- a/packages/specboot/bin/init.js
++++ b/packages/specboot/bin/init.js
+@@ -78,6 +78,7 @@
+   console.log(`  Skipped       ${stats.skipped.length}`);
+ 
+   if (stats.errors.length) {
++    process.exitCode = 1;
+     console.log(`\n  Errors (${stats.errors.length}):`);
+     for (const e of stats.errors) console.log(`    ! ${e}`);
+   }
+--- a/README.md
++++ b/README.md
+@@ -402,3 +402,11 @@
+ This source repository has a proposed [self-specification](openspec/self-specification.md), five [baseline capabilities](openspec/specs/) and an [active bootstrap change](openspec/changes/bootstrap-self-specification/). These describe Specboot itself, not the example customer application. Use the same spec-first workflow for changes to the installer, reusable knowledge and engineering process.
+ 
+ Run the focused offline verification from the repository root: `node --test tests/self-spec.test.cjs`. Independent review and official OpenSpec validation remain pending. The NPM customer template is unchanged.
++
++## Proposed self-improvement cycle 1
++
++Read openspec/changes/bootstrap-self-specification/self-improvement-plan.md for
++a bounded specification-first repair of installer process status. See the
++reports/cycle-1 directory beside that plan for evidence and current acceptance
++gates. This candidate changes the packaged executable; it is not an accepted
++release and does not reconcile the source/template guidance differences.
+--- a/tests/remediation.test.cjs
++++ b/tests/remediation.test.cjs
+@@ -27,7 +27,7 @@
+ test('T15: customer README preserved and repeat manual import is idempotent',()=>temp(d=>{const p=path.join(d,'README.md');fs.writeFileSync(p,'customer-owned');goodImport(d);goodImport(d);assert.equal(fs.readFileSync(p,'utf8'),'customer-owned');}));
+ test('T16: conflicting onboarding symlink rejected without modifying its target',()=>temp(d=>{const p=path.join(d,'README.md');fs.writeFileSync(p,'customer-owned');fs.mkdirSync(path.join(d,'ai-specs'));fs.symlinkSync('../README.md',onboarding(d));const r=importer(d);assert.notEqual(r.status,0);assert.match(r.stderr,/Conflicting import path/);assert.equal(fs.readFileSync(p,'utf8'),'customer-owned');assert.equal(fs.existsSync(path.join(d,'docs')),false);}));
+ test('T17: conflicting regular onboarding rejected without overwriting',()=>temp(d=>{fs.mkdirSync(path.join(d,'ai-specs'));fs.writeFileSync(onboarding(d),'custom');const r=importer(d);assert.notEqual(r.status,0);assert.equal(fs.readFileSync(onboarding(d),'utf8'),'custom');assert.equal(fs.existsSync(path.join(d,'docs')),false);}));
+-test('T18: all scenario identities and references validated',()=>{const r=validate(root,mapping());assert.equal(r.requirements,31);assert.equal(r.scenarios,41);});
++test('T18: all scenario identities and references validated',()=>{const r=validate(root,mapping());assert.equal(r.requirements,32);assert.equal(r.scenarios,44);});
+ test('T19: invalid mapped source rejected',()=>{const m=mapping();m.scenarios[0].sources=['nonexistent.js'];assert.throws(()=>validate(root,m),/Missing source/);});
+ test('T20: nonexistent test identity rejected',()=>{const m=mapping();m.scenarios.find(x=>x.tests.length).tests=['T99'];assert.throws(()=>validate(root,m),/Unknown test/);});
+ test('T21: omitted scenario rejected',()=>{const m=mapping();m.scenarios.pop();assert.throws(()=>validate(root,m),/Missing scenario mapping/);});
+@@ -35,5 +35,5 @@
+ test('T23: invalid classification and escaping source rejected',()=>{let m=mapping();m.scenarios[0].kind='claimed-pass';assert.throws(()=>validate(root,m),/Invalid evidence kind/);m=mapping();m.scenarios[0].sources=['../outside'];assert.throws(()=>validate(root,m),/Invalid source/);});
+ test('T24: affected-surface QA profile consistent across source instructions',()=>{for(const file of ['ai-specs/skills/factory/SKILL.md','docs/openspec-tasks-mandatory-steps.md','openspec/config.yaml']){const s=read(file);assert.match(s,/affected.surface/i);assert.match(s,/acceptance\.md/);assert.match(s,/N\/A/);}assert.match(read('docs/openspec-tasks-mandatory-steps.md'),/Do not create fictional database, curl or Playwright reports/);});
+ test('T25: canonical skill inventory exhaustive for top-level entries',()=>{const s=read('openspec/capability-inventory.md');const actual=fs.readdirSync(path.join(root,'ai-specs/skills')).filter(n=>fs.existsSync(path.join(root,'ai-specs/skills',n,'SKILL.md'))).sort();const rows=[...s.matchAll(/^\| ([a-z-]+) \| ai-specs\/skills\/\1\/SKILL\.md \|/gm)].map(m=>m[1]).sort();assert.deepEqual(rows,actual);for(const term of ['Task acquisition and Jira status','Workspace','Model selection','Documentation rendering','Code review scripting','Documentation maintenance','Installer failure and recovery'])assert.ok(s.includes(term));});
+-test('T26: installer reports recorded link creation error (injected failure)',()=>temp(d=>{const preload=path.join(d,'fail-link.cjs');fs.writeFileSync(preload,`const fs=require('node:fs');const real=fs.symlinkSync;fs.symlinkSync=(target,dest,...rest)=>{if(dest.endsWith('CLAUDE.md'))throw new Error('injected link failure');return real(target,dest,...rest)};`);const target=path.join(d,'customer');const r=spawnSync(process.execPath,['--require',preload,path.join(root,'packages/specboot/bin/init.js'),target],{encoding:'utf8',timeout:15000});assert.equal(r.status,0,r.stderr);assert.match(r.stdout,/Errors \(1\):/);assert.match(r.stdout,/CLAUDE\.md: injected link failure/);}));
++test('T26: installer reports recorded link creation error (injected failure)',()=>temp(d=>{const preload=path.join(d,'fail-link.cjs');fs.writeFileSync(preload,`const fs=require('node:fs');const real=fs.symlinkSync;fs.symlinkSync=(target,dest,...rest)=>{if(dest.endsWith('CLAUDE.md'))throw new Error('injected link failure');return real(target,dest,...rest)};`);const target=path.join(d,'customer');const r=spawnSync(process.execPath,['--require',preload,path.join(root,'packages/specboot/bin/init.js'),target],{encoding:'utf8',timeout:15000});assert.equal(r.status,1,r.stderr);assert.match(r.stdout,/Errors \(1\):/);assert.match(r.stdout,/CLAUDE\.md: injected link failure/);}));
+ test('T27: symlinked customer directory rejected before writes',()=>temp(d=>{const outside=path.join(d,'external'),customer=path.join(d,'customer');fs.mkdirSync(outside);fs.mkdirSync(customer);fs.symlinkSync(outside,path.join(customer,'docs'),'dir');const r=importer(customer);assert.notEqual(r.status,0);assert.deepEqual(fs.readdirSync(outside),[]);}));

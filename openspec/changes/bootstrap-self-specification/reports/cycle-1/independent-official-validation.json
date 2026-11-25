@@ -1,0 +1,5 @@
+{
+  "command": "openspec validate --all --strict",
+  "exit_status": 0,
+  "output": "\u2713 spec/agent-workflow\n\u2713 change/bootstrap-self-specification\n\u2713 spec/engineering-knowledge\n\u2713 spec/installation\n\u2713 spec/onboarding\n\u2713 spec/quality-assurance\nTotals: 6 passed, 0 failed (6 items)\n- Validating...\n"
+}

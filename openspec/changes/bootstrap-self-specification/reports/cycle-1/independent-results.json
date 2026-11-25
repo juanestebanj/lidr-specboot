@@ -1,0 +1,93 @@
+{
+  "scope": {
+    "production_change": "Exactly one exitCode assignment; packaged template byte-identical to original ZIP",
+    "template_files_verified": 118,
+    "original_archive_sha256": "b27f483791a4d831950f7b4f52b3e682e7eedc9053f16efebbfee578f718a6a7",
+    "candidate_cli_sha256": "25dfa753408784b7ab12cdcd5ea171a7dfa7d5f4821a371a30211420227c5234"
+  },
+  "green": {
+    "exit_status": 0,
+    "summary": [
+      "# tests 3",
+      "# pass 3",
+      "# fail 0"
+    ],
+    "failed_tests": []
+  },
+  "traceability": {
+    "exit_status": 0,
+    "summary": [],
+    "failed_tests": []
+  },
+  "red-original": {
+    "exit_status": 1,
+    "summary": [
+      "# tests 3",
+      "# pass 1",
+      "# fail 2"
+    ],
+    "failed_tests": [
+      "not ok 1 - T28: one recorded link failure returns one and preserves the complete report",
+      "not ok 2 - T29: multiple recorded link failures return one rather than an error count"
+    ]
+  },
+  "mutant-no-assignment": {
+    "exit_status": 1,
+    "summary": [
+      "# tests 3",
+      "# pass 1",
+      "# fail 2"
+    ],
+    "failed_tests": [
+      "not ok 1 - T28: one recorded link failure returns one and preserves the complete report",
+      "not ok 2 - T29: multiple recorded link failures return one rather than an error count"
+    ]
+  },
+  "mutant-status-two": {
+    "exit_status": 1,
+    "summary": [
+      "# tests 3",
+      "# pass 1",
+      "# fail 2"
+    ],
+    "failed_tests": [
+      "not ok 1 - T28: one recorded link failure returns one and preserves the complete report",
+      "not ok 2 - T29: multiple recorded link failures return one rather than an error count"
+    ]
+  },
+  "mutant-unconditional-failure": {
+    "exit_status": 1,
+    "summary": [
+      "# tests 3",
+      "# pass 2",
+      "# fail 1"
+    ],
+    "failed_tests": [
+      "not ok 3 - T30: successful processing and repeat installation return zero and preserve customer bytes"
+    ]
+  },
+  "full-suite-windows": {
+    "exit_status": 1,
+    "summary": [
+      "# tests 30",
+      "# pass 21",
+      "# fail 9"
+    ],
+    "failed_tests": [
+      "not ok 6 - T14: empty manual import gets correct regular onboarding and reusable paths",
+      "not ok 7 - T15: customer README preserved and repeat manual import is idempotent",
+      "not ok 8 - T16: conflicting onboarding symlink rejected without modifying its target",
+      "not ok 18 - T26: installer reports recorded link creation error (injected failure)",
+      "not ok 19 - T27: symlinked customer directory rejected before writes",
+      "not ok 22 - T03: clean explicit install copies template and creates correct links, not self-specs",
+      "not ok 23 - T04: default install uses cwd",
+      "not ok 24 - T05: existing file remains intact and repeat does not copy files",
+      "not ok 25 - T06: canonical source and agent-specific link integrity"
+    ]
+  },
+  "environment": {
+    "node": "v24.16.0",
+    "official_openspec": "C:\\Users\\jjara\\AppData\\Roaming\\npm\\openspec.CMD",
+    "native_symlink_status": "Not materialized: Windows privilege denied; no simulated links substituted in source"
+  }
+}

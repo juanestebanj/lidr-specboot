@@ -1,0 +1,620 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "INV-01-S01",
+      "requirement": "INV-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/maintenance-capability-inventory/spec.md",
+      "sources": [
+        "openspec/capability-inventory.md",
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T25"
+      ],
+      "kind": "structure",
+      "reason": "Factory acquisition/status inventory present."
+    },
+    {
+      "id": "INV-02-S01",
+      "requirement": "INV-02",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/maintenance-capability-inventory/spec.md",
+      "sources": [
+        "openspec/capability-inventory.md",
+        "ai-specs/skills/factory/SKILL.md",
+        "ai-specs/skills/using-git-worktrees/SKILL.md"
+      ],
+      "tests": [
+        "T25"
+      ],
+      "kind": "structure",
+      "reason": "Worktree and branch inventory present."
+    },
+    {
+      "id": "INV-03-S01",
+      "requirement": "INV-03",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/maintenance-capability-inventory/spec.md",
+      "sources": [
+        "openspec/capability-inventory.md"
+      ],
+      "tests": [
+        "T25"
+      ],
+      "kind": "structure",
+      "reason": "Every top-level canonical skill inventoried."
+    },
+    {
+      "id": "INV-04-S01",
+      "requirement": "INV-04",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/maintenance-capability-inventory/spec.md",
+      "sources": [
+        "openspec/capability-inventory.md",
+        "docs/base-standards.md",
+        "ai-specs/scripts/code_review.sh",
+        "ai-specs/skills/writing-skills/render-graphs.js",
+        "ai-specs/skills/update-docs/SKILL.md"
+      ],
+      "tests": [
+        "T25"
+      ],
+      "kind": "structure",
+      "reason": "Execution and utility inventory present."
+    },
+    {
+      "id": "INV-05-S01",
+      "requirement": "INV-05",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/maintenance-capability-inventory/spec.md",
+      "sources": [
+        "openspec/capability-inventory.md",
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T25"
+      ],
+      "kind": "structure",
+      "reason": "Installer recovery limitations inventoried."
+    },
+    {
+      "id": "SELF-01-S01",
+      "requirement": "SELF-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "openspec/self-specification.md",
+        "openspec/config.yaml",
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T10",
+        "T12"
+      ],
+      "kind": "instruction",
+      "reason": "Baseline-first instructions present; no live agent conformance."
+    },
+    {
+      "id": "SELF-01-S02",
+      "requirement": "SELF-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03"
+      ],
+      "kind": "runtime",
+      "reason": "NPM installer excludes self-specifications and tests."
+    },
+    {
+      "id": "SELF-01-S03",
+      "requirement": "SELF-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "scripts/manual-import.cjs",
+        "README.md",
+        "setup-sdd.md"
+      ],
+      "tests": [
+        "T11",
+        "T14"
+      ],
+      "kind": "runtime",
+      "reason": "Allowlist and observed manual import boundary."
+    },
+    {
+      "id": "SELF-02-S01",
+      "requirement": "SELF-02",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "openspec/traceability.json",
+        "scripts/validate-traceability.cjs",
+        "tests/remediation.test.cjs"
+      ],
+      "tests": [
+        "T01",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23"
+      ],
+      "kind": "structure",
+      "reason": "Reference, identity, coverage and corruption checks; semantic adequacy still reviewed manually."
+    },
+    {
+      "id": "SELF-03-S01",
+      "requirement": "SELF-03",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "openspec/self-specification.md",
+        "openspec/changes/bootstrap-self-specification/acceptance.md"
+      ],
+      "tests": [
+        "T10",
+        "T13"
+      ],
+      "kind": "instruction",
+      "reason": "Pending independent review and maintainer acceptance preserved."
+    },
+    {
+      "id": "SELF-03-S02",
+      "requirement": "SELF-03",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md",
+        "openspec/changes/bootstrap-self-specification/acceptance.md",
+        "openspec/changes/bootstrap-self-specification/tasks.md"
+      ],
+      "tests": [
+        "T13"
+      ],
+      "kind": "instruction",
+      "reason": "Separate apply and acceptance records checked."
+    },
+    {
+      "id": "SELF-04-S01",
+      "requirement": "SELF-04",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md",
+        "openspec/config.yaml",
+        "openspec/self-specification.md"
+      ],
+      "tests": [
+        "T12"
+      ],
+      "kind": "instruction",
+      "reason": "Source maintenance override, not live Jira execution."
+    },
+    {
+      "id": "SELF-05-S01",
+      "requirement": "SELF-05",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md",
+        "openspec/changes/bootstrap-self-specification/acceptance.md",
+        "openspec/changes/bootstrap-self-specification/tasks.md"
+      ],
+      "tests": [
+        "T13"
+      ],
+      "kind": "instruction",
+      "reason": "Implementation scope and ordered pending gates checked."
+    },
+    {
+      "id": "SELF-06-S01",
+      "requirement": "SELF-06",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "scripts/manual-import.cjs",
+        "ai-specs/specboot-instructions.md"
+      ],
+      "tests": [
+        "T14"
+      ],
+      "kind": "runtime",
+      "reason": "Empty target receives dedicated regular onboarding; source paths excluded."
+    },
+    {
+      "id": "SELF-06-S02",
+      "requirement": "SELF-06",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "scripts/manual-import.cjs",
+        "ai-specs/specboot-instructions.md"
+      ],
+      "tests": [
+        "T15"
+      ],
+      "kind": "runtime",
+      "reason": "Customer README and repeat behavior checked."
+    },
+    {
+      "id": "SELF-06-S03",
+      "requirement": "SELF-06",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "scripts/manual-import.cjs"
+      ],
+      "tests": [
+        "T16",
+        "T17",
+        "T27"
+      ],
+      "kind": "runtime",
+      "reason": "Conflicting regular/symlink onboarding and symlinked ancestor rejected."
+    },
+    {
+      "id": "SELF-07-S01",
+      "requirement": "SELF-07",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/self-maintenance/spec.md",
+      "sources": [
+        "docs/openspec-tasks-mandatory-steps.md",
+        "openspec/config.yaml",
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T24"
+      ],
+      "kind": "instruction",
+      "reason": "Affected-surface rules checked; actual report records applicability."
+    },
+    {
+      "id": "FLOW-01-S01",
+      "requirement": "FLOW-01",
+      "spec": "openspec/specs/agent-workflow/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T07"
+      ],
+      "kind": "instruction",
+      "reason": "Order of named pipeline steps checked, not execution."
+    },
+    {
+      "id": "FLOW-02-S01",
+      "requirement": "FLOW-02",
+      "spec": "openspec/specs/agent-workflow/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T07"
+      ],
+      "kind": "instruction",
+      "reason": "Separate reviewer and handshake instruction checked."
+    },
+    {
+      "id": "FLOW-03-S01",
+      "requirement": "FLOW-03",
+      "spec": "openspec/specs/agent-workflow/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Loop failure instructions, no live agent execution."
+    },
+    {
+      "id": "FLOW-03-S02",
+      "requirement": "FLOW-03",
+      "spec": "openspec/specs/agent-workflow/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Single-pass instructions, no live agent execution."
+    },
+    {
+      "id": "FLOW-04-S01",
+      "requirement": "FLOW-04",
+      "spec": "openspec/specs/agent-workflow/spec.md",
+      "sources": [
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T07",
+        "T13"
+      ],
+      "kind": "instruction",
+      "reason": "Delivery prohibited inside pipeline; separate acceptance gates."
+    },
+    {
+      "id": "KNOW-01-S01",
+      "requirement": "KNOW-01",
+      "spec": "openspec/specs/engineering-knowledge/spec.md",
+      "sources": [
+        "docs/base-standards.md"
+      ],
+      "tests": [
+        "T06"
+      ],
+      "kind": "runtime",
+      "reason": "Root compatibility link destinations verified."
+    },
+    {
+      "id": "KNOW-02-S01",
+      "requirement": "KNOW-02",
+      "spec": "openspec/specs/engineering-knowledge/spec.md",
+      "sources": [
+        "docs/base-standards.md",
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T06",
+        "T25"
+      ],
+      "kind": "structure",
+      "reason": "Canonical top-level skills inventory and agent links."
+    },
+    {
+      "id": "KNOW-03-S01",
+      "requirement": "KNOW-03",
+      "spec": "openspec/specs/engineering-knowledge/spec.md",
+      "sources": [
+        "docs/base-standards.md"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Section 7 requires specification update before post-apply code."
+    },
+    {
+      "id": "KNOW-04-S01",
+      "requirement": "KNOW-04",
+      "spec": "openspec/specs/engineering-knowledge/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03"
+      ],
+      "kind": "runtime",
+      "reason": "Installer payload excludes root-only specs and tests."
+    },
+    {
+      "id": "INST-01-S01",
+      "requirement": "INST-01",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03"
+      ],
+      "kind": "runtime",
+      "reason": "Explicit target installation and byte comparison."
+    },
+    {
+      "id": "INST-01-S02",
+      "requirement": "INST-01",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T04"
+      ],
+      "kind": "runtime",
+      "reason": "Default target via working directory."
+    },
+    {
+      "id": "INST-02-S01",
+      "requirement": "INST-02",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03"
+      ],
+      "kind": "runtime",
+      "reason": "Template file contents compared in clean target."
+    },
+    {
+      "id": "INST-02-S02",
+      "requirement": "INST-02",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T05"
+      ],
+      "kind": "runtime",
+      "reason": "Existing file preserved and repeat copies zero."
+    },
+    {
+      "id": "INST-03-S01",
+      "requirement": "INST-03",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03"
+      ],
+      "kind": "runtime",
+      "reason": "Expected root and agent links checked."
+    },
+    {
+      "id": "INST-04-S01",
+      "requirement": "INST-04",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03",
+        "T05"
+      ],
+      "kind": "runtime",
+      "reason": "Normal completion summary and counts."
+    },
+    {
+      "id": "INST-04-S02",
+      "requirement": "INST-04",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T26"
+      ],
+      "kind": "runtime",
+      "reason": "Injected link failure reported; inherited zero exit status explicitly observed."
+    },
+    {
+      "id": "INST-05-S01",
+      "requirement": "INST-05",
+      "spec": "openspec/specs/installation/spec.md",
+      "sources": [
+        "packages/specboot/package.json"
+      ],
+      "tests": [
+        "T02"
+      ],
+      "kind": "structure",
+      "reason": "Package manifest fields; actual packaging separately checked."
+    },
+    {
+      "id": "ONB-01-S01",
+      "requirement": "ONB-01",
+      "spec": "openspec/specs/onboarding/spec.md",
+      "sources": [
+        "setup-sdd.md",
+        "ai-specs/specboot-instructions.md",
+        "scripts/manual-import.cjs"
+      ],
+      "tests": [
+        "T09",
+        "T14",
+        "T15"
+      ],
+      "kind": "instruction",
+      "reason": "Onboarding steps checked and manual import exercised; full setup not executed."
+    },
+    {
+      "id": "ONB-02-S01",
+      "requirement": "ONB-02",
+      "spec": "openspec/specs/onboarding/spec.md",
+      "sources": [
+        "setup-sdd.md",
+        "README.md",
+        "ai-specs/specboot-instructions.md"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Customization required; no live agent customization tested."
+    },
+    {
+      "id": "ONB-03-S01",
+      "requirement": "ONB-03",
+      "spec": "openspec/specs/onboarding/spec.md",
+      "sources": [
+        "setup-sdd.md",
+        "packages/specboot/bin/init.js"
+      ],
+      "tests": [
+        "T03",
+        "T09"
+      ],
+      "kind": "runtime",
+      "reason": "CLI runs without optional external setup; setup instructions separate."
+    },
+    {
+      "id": "QA-01-S01",
+      "requirement": "QA-01",
+      "spec": "openspec/specs/quality-assurance/spec.md",
+      "sources": [
+        "docs/openspec-tasks-mandatory-steps.md",
+        "openspec/config.yaml",
+        "ai-specs/skills/factory/SKILL.md"
+      ],
+      "tests": [
+        "T24"
+      ],
+      "kind": "instruction",
+      "reason": "Affected-surface applicability profile exists in controlling documents."
+    },
+    {
+      "id": "QA-02-S01",
+      "requirement": "QA-02",
+      "spec": "openspec/specs/quality-assurance/spec.md",
+      "sources": [
+        "ai-specs/skills/adversarial-review/SKILL.md"
+      ],
+      "tests": [
+        "T08"
+      ],
+      "kind": "instruction",
+      "reason": "Evidence reproduction and spec comparison instructions checked."
+    },
+    {
+      "id": "QA-03-S01",
+      "requirement": "QA-03",
+      "spec": "openspec/specs/quality-assurance/spec.md",
+      "sources": [
+        "ai-specs/skills/adversarial-review/SKILL.md",
+        "ai-specs/skills/mutation-testing/SKILL.md"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Mutation-style review of changed production logic prescribed."
+    },
+    {
+      "id": "QA-03-S02",
+      "requirement": "QA-03",
+      "spec": "openspec/specs/quality-assurance/spec.md",
+      "sources": [
+        "ai-specs/skills/adversarial-review/SKILL.md"
+      ],
+      "tests": [],
+      "kind": "inspection",
+      "reason": "Documentation-only exception inspected."
+    },
+    {
+      "id": "EXIT-01-S01",
+      "requirement": "EXIT-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js",
+        "tests/installer-exit-status.test.cjs"
+      ],
+      "tests": [
+        "T28",
+        "T29"
+      ],
+      "reason": "Injected single and multiple link errors check process status and retained report.",
+      "kind": "runtime"
+    },
+    {
+      "id": "EXIT-01-S02",
+      "requirement": "EXIT-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js",
+        "tests/installer-exit-status.test.cjs"
+      ],
+      "tests": [
+        "T30"
+      ],
+      "reason": "Test-only link creation simulation isolates successful process status; native link behavior is separate.",
+      "kind": "runtime"
+    },
+    {
+      "id": "EXIT-01-S03",
+      "requirement": "EXIT-01",
+      "spec": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
+      "sources": [
+        "packages/specboot/bin/init.js",
+        "tests/installer-exit-status.test.cjs"
+      ],
+      "tests": [
+        "T30"
+      ],
+      "reason": "Repeated simulated-link install checks status zero, zero copies and preserved customer bytes.",
+      "kind": "runtime"
+    }
+  ]
+}

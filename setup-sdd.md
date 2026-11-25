@@ -65,25 +65,20 @@ If it is already initialized, keep existing artifacts and continue.
 ### 5) Import LIDR Specboot Into the Project
 
 Copy this repository's baseline files into the target project **without overwriting existing files**.
-Keep the source `README.md` as onboarding instructions inside `ai-specs/` instead of replacing the project's root README.
+Use the dedicated regular `ai-specs/specboot-instructions.md` customer onboarding artifact instead of replacing the project's root README.
 
 Recommended automation sequence:
 
 ```bash
 tmp_dir="$(mktemp -d)"
 git clone --depth 1 https://github.com/LIDR-academy/lidr-specboot.git "$tmp_dir/lidr-specboot"
-for item in "$tmp_dir/lidr-specboot"/*; do
-  [ -e "$item" ] || continue
-  [ "$(basename "$item")" = "packages" ] && continue
-  cp -rn "$item" .
-done
-mkdir -p ai-specs
-cp -n "$tmp_dir/lidr-specboot/README.md" "ai-specs/specboot-instructions.md"
+node "$tmp_dir/lidr-specboot/scripts/manual-import.cjs" . || exit 1
 rm -rf "$tmp_dir"
 ```
 
 Important:
-- Use `cp -rn` exactly to preserve existing project files (especially existing root `README.md`)
+- Use the source importer to preserve existing project files (especially the root `README.md`). Resolve conflicting onboarding paths explicitly; never follow or overwrite them.
+- Do not copy source-only `openspec/` or `tests/` into the target project; use the explicit importer allowlist.
 - **Do not copy `packages/specboot/`** into the target project. That directory is the
   Claude Code plugin / npm package template only (`@lidr/lidr-specboot`); it is not
   part of the runtime Specboot layout. Copying it creates duplicate agent configs,

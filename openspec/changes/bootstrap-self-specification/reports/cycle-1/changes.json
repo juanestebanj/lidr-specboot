@@ -1,0 +1,201 @@
+{
+  "source_archive_sha256": "b27f483791a4d831950f7b4f52b3e682e7eedc9053f16efebbfee578f718a6a7",
+  "excludes_own_hash": true,
+  "changes": [
+    {
+      "path": "openspec/capability-inventory.md",
+      "before_sha256": "91a30b08f5d0cafa2a06f3808a66f4af1aa8184693aa3e44723f5a048b2a0d98",
+      "after_sha256": "87ca531a77821ab5aa9fa28dd495e1513968a391fb501802e8e8aacee579f771"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/acceptance.md",
+      "before_sha256": "6e8cb302e5ab918c4447e0317b2d188bafe42e7cfbdfb88189e38337d9f6118d",
+      "after_sha256": "83a30db20f57d2de775ef73fc02a185f8d9a9d63c32540bfb70534f744ec4ebb"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/design.md",
+      "before_sha256": "b1518169f2d8883011458ffbdaf46d3c6093bd170f71066c6fd8d4fb70a331e0",
+      "after_sha256": "6553fb7d7a96230b16f1df85bc6dc3b6c6d48dccaddbdf167fea9f4bee834814"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/proposal.md",
+      "before_sha256": "770d3f6efa0ceaa98fe2df7ee1fe0cee4db2729db66ff45402d949669b706989",
+      "after_sha256": "71b47c68ec069038e3626b85038bab535794100fea7813f67cf431d27f8a5c03"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/remediation.md",
+      "before_sha256": "852dfc91941dc6c3b8c5bc864aee3bc7e1fa79e442b3957f61de3fa7d4d016cf",
+      "after_sha256": "e61e4a55bb6b86068bc8e51ec08840a3742e2275f4a774bc1053b7f8ec7bb758"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/final-focused.txt",
+      "before_sha256": null,
+      "after_sha256": "9b94691104f96f80f534ef3c6f5b11e46bb060a088276cdbad8b04318157f0de"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/final-openspec.txt",
+      "before_sha256": null,
+      "after_sha256": "2bb98d3a567fdfd1914963973cd06876dee46fd3bce44a18d2c175157fffd0ac"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/final-traceability.txt",
+      "before_sha256": null,
+      "after_sha256": "d99d7cb40d7f1ec665d72c529b75532c9be980f5c2d9b6dcde065ff3f6ed0ee4"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/full-suite-windows.txt",
+      "before_sha256": null,
+      "after_sha256": "b2cdd51abf7a32232bb9061d6b0e09b58eac75b4489dbf747192bf8dbf427ebb"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/green.txt",
+      "before_sha256": null,
+      "after_sha256": "3a3551db66f0f5e43fb7e64c51fc32cbd829c6aa7952b7d8f6a939f4ea96e150"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-full-suite-windows.txt",
+      "before_sha256": null,
+      "after_sha256": "d0a90f91ad88cefe7f0b51e1803bc193e87a10bdc7c8020f1a0a7af35f846a05"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-green.txt",
+      "before_sha256": null,
+      "after_sha256": "f3fedf93a94ff63abc71a5a35b034fa269dfe445cb451628752e20e9d30f5cf9"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-mutant-no-assignment.txt",
+      "before_sha256": null,
+      "after_sha256": "5ccbf821db76544712a2468e24f8cba83ec9d2f486b202b7676a8674c88335eb"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-mutant-status-two.txt",
+      "before_sha256": null,
+      "after_sha256": "cc1a70baa14890c3fcd0ffc713c7ea8ec1e14123371c8851672830969e9bfc3a"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-mutant-unconditional-failure.txt",
+      "before_sha256": null,
+      "after_sha256": "1708e1cbacb725c16f7627d499d76e22ca81396040b214d09b7a507a1ecd31a0"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-native-diagnostics.txt",
+      "before_sha256": null,
+      "after_sha256": "527a0de231611d8337bde3fc4b70702e83852e384acdf1a042d464f2c4b37141"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-official-validation.json",
+      "before_sha256": null,
+      "after_sha256": "c4ab5aeb263fb377ad39b62d49edee776bf5c5fbf46f3160ee93ff7ff0330248"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-production.diff",
+      "before_sha256": null,
+      "after_sha256": "3fe42af87ff26530fad5cd57f141b934a9fc5ee0580f04e35b99fe559e8fc7a4"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-red-original.txt",
+      "before_sha256": null,
+      "after_sha256": "60b29be4ac84602092ff097ab2898183706c7a292613e940b376e56ae973f4fe"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-results.json",
+      "before_sha256": null,
+      "after_sha256": "a2985a1fbd812af6f75ed152dec66f57993f3a3dcb43197409ef4c0f44ace04c"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-review.md",
+      "before_sha256": null,
+      "after_sha256": "3bc91c6f14b987b7e0e7c7a790c80f0e8acf05ff6f49351f945cb9457e3bf75d"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/independent-traceability.txt",
+      "before_sha256": null,
+      "after_sha256": "d99d7cb40d7f1ec665d72c529b75532c9be980f5c2d9b6dcde065ff3f6ed0ee4"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/mutation.txt",
+      "before_sha256": null,
+      "after_sha256": "2d5241380027ee6776ce52e7a90a0d8a162a4086336d4e289c8b23f86e90bed3"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/red.txt",
+      "before_sha256": null,
+      "after_sha256": "3faddf6bdadb0ba6ce9e74613a92870d573abf3b9bc233fadd902322993f0361"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/results.json",
+      "before_sha256": null,
+      "after_sha256": "c50b904891f8843bbae7b0f429974570bb5072f17f3382c85d95befdbaa3f72d"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/specification-before-implementation.sha256",
+      "before_sha256": null,
+      "after_sha256": "2fa39366a1541a9970dd9d694a1a4fb37009b12132205c2a9515206c5ab99b1a"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/traceability.txt",
+      "before_sha256": null,
+      "after_sha256": "d99d7cb40d7f1ec665d72c529b75532c9be980f5c2d9b6dcde065ff3f6ed0ee4"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/verification.md",
+      "before_sha256": null,
+      "after_sha256": "070aec7ad5c9e81e473bd5a4831e9d8d98947ea9ede4abd9ecab4e78759f2186"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/self-improvement-plan.md",
+      "before_sha256": null,
+      "after_sha256": "80a7d4f6d06fcdefb0c78bb71d7cbba9fd1cae1467ebb7866bc042d5a4e66bf3"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/specs/installer-exit-status/spec.md",
+      "before_sha256": null,
+      "after_sha256": "661d4d8897d95c1fb2d97ef4c0e09bf5975e77da2f16f145b132883837fddc3f"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/tasks.md",
+      "before_sha256": "700f402d1acd2ba36733b24d5de10beb7773339b1164eb2611cf1e6655363f69",
+      "after_sha256": "643b1c7d636feca5bf46fbd3aaaa4a2a8d3b07063dd7979730d56a4d2e3cecc3"
+    },
+    {
+      "path": "openspec/self-specification.md",
+      "before_sha256": "1d9ad72aa317c752fee592f6c8c370364c728b479c30801dcbd5511fcfe2d1ff",
+      "after_sha256": "9d7049e0beab4befbea82208e042692aa8737212a5f0fd0d703ab17ebed17a3b"
+    },
+    {
+      "path": "openspec/traceability.json",
+      "before_sha256": "ec42391b5d83cfb6465738f9cbab2196c5a3c0f7d1cd1e2738d25b0f34e09cc0",
+      "after_sha256": "134d6a456fa5dc0335fbecf5ca02362fc568da2f60706e4329a2acaa43137a90"
+    },
+    {
+      "path": "openspec/traceability.md",
+      "before_sha256": "2900ae139be0241c1d77aa6375689c0195588e2552b1ed93229fd33ce11d45bc",
+      "after_sha256": "e5dce95d2f4b2811868c441c570e0a306c00d710f5d4d170a4b828cf8b3d770b"
+    },
+    {
+      "path": "packages/specboot/bin/init.js",
+      "before_sha256": "5da7058a56f91596ee0bc5b9e31506d97c56f982e00a2456f9545fc057ca7ef0",
+      "after_sha256": "3749eb68649a14b99391ef177ce3e1f50bf5c3b246848fb6a8773a0c7d008839"
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "24164b824d241123f652cda9294652ff3b324ef07e04fa58268bcf906affe73c",
+      "after_sha256": "9b9997eb12f2ae989bb1fdceac2c27bd1bbd53761cab615e89aef8b6bc5e40e3"
+    },
+    {
+      "path": "tests/installer-exit-status.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "f6ac4a79ec89f8494d02c5a46fc3616874c8d62300b90c053db20f59dc6b98a9"
+    },
+    {
+      "path": "tests/remediation.test.cjs",
+      "before_sha256": "3dfae0fd0e359296d9fe28ca07514c54969f0c77ed48d7fbb105baef30401ddb",
+      "after_sha256": "ebbdd6ad53e43b8e60c2e02112ef0cc87fd82ee963a338e865944c09bf7d4a71"
+    },
+    {
+      "path": "openspec/changes/bootstrap-self-specification/reports/cycle-1/source-changes.patch",
+      "before_sha256": null,
+      "after_sha256": "d1eabb92d0391f317645448006aae33ffefd2639014a566ed6d389e954e6d103"
+    }
+  ]
+}

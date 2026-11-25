@@ -78,6 +78,7 @@ function main() {
   console.log(`  Skipped       ${stats.skipped.length}`);
 
   if (stats.errors.length) {
+    process.exitCode = 1;
     console.log(`\n  Errors (${stats.errors.length}):`);
     for (const e of stats.errors) console.log(`    ! ${e}`);
   }

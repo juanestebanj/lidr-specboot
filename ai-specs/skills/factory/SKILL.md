@@ -13,10 +13,18 @@ version: 1.5.0
 
 Run one or more independent feature tasks in parallel. Each task gets an isolated git worktree and runs the full OpenSpec pipeline autonomously through verification. Before every verify, a different subagent runs `adversarial-review` with the Jira id and the worktree. By default, verification loops until no CRITICAL issues remain. One pass happens only when the user says `no-loop`, `no loop`, or `no bucle`. Do **not** archive, commit, or clean up worktrees unless the user asks separately.
 
+## Source self-maintenance mode (takes precedence)
+
+Before choosing a planning mode, identify the task target. If this source checkout contains `openspec/self-specification.md` and the task changes Specboot itself, use **source self-maintenance mode**. Read `openspec/self-specification.md`, `openspec/config.yaml`, the relevant baseline and active delta before planning. Jira selects the task, not the specification authority: ticket and queue rules still select work, but the greenfield-only prohibitions on baseline/history reading, reuse and MODIFIED/REMOVED deltas do not apply. Amend a relevant active change rather than create an overlapping delta. If the approved scope belongs to an existing active change, reuse its name and artifacts at steps 3–4 (do not invoke openspec-new-change again); otherwise scaffold a new change. Pass this mode and precedence explicitly to subagents and invoked skills. For customer tasks outside this mode, keep the original greenfield rules.
+
+In source self-maintenance, apply only implementation checkboxes in `tasks.md`. Track independent review, final verification, maintainer acceptance and separately authorized archival in `acceptance.md`, outside apply completeness. If the independent reviewer or trusted CLI is unavailable, report a blocked gate and stop; never fabricate a verdict. Review and final verification remain required before acceptance; factory exit never authorizes archival. Do not transition Jira to In review without satisfactory independent review and verification.
+
+Use the affected-surface QA profile from `openspec/config.yaml` and `docs/openspec-tasks-mandatory-steps.md`: real automated tests and documentation are required; DB, HTTP API and browser checks only when affected, with an explicit N/A reason otherwise. This profile supersedes the application-specific §8–§16 numbering and report deliverables below for source self-maintenance only. It never waives verification for an affected surface.
+
 ## Task source (priority)
 
 1. **Jira queue keyword** — `jira-tasks` or `jira-bugs` and the similar phrases in **Jira queue keywords**. Highest priority. Not a change name. Do **not** read `references/parallel-tasks.md`.
-2. **Jira ticket mentioned** (key like `ABC-123` or an Atlassian issue URL) — **Jira greenfield mode** for those tickets only
+2. **Jira ticket mentioned** (key like `ABC-123` or an Atlassian issue URL) — **Jira greenfield mode** for those tickets only, except source self-maintenance
 3. **Explicit arguments** from the user (change name, ticket text, or inline task block)
 4. **`references/parallel-tasks.md`** — fallback only when the user does not specify tasks inline and no queue keyword was used. Do **not** read this file when a queue keyword, a Jira ticket, or explicit arguments are given
 
@@ -43,7 +51,7 @@ If a tasks phrase and a bugs phrase both appear, use **jira-bugs**.
 - Do not transition Jira when searching, when starting a task, or while the pipeline is still running. Transition only after verification succeeds. See **Jira status after verification**.
 - Ticket keys in the same message do not replace the search. To run one ticket, the user must name the key and must not use a queue keyword.
 
-Each match then runs **Jira greenfield mode** as its own parallel task. Give every subagent the issue key, summary, and these search rules verbatim.
+Each match then runs as its own parallel task using Jira greenfield mode unless source self-maintenance applies. Give every subagent the issue key, summary, and these search rules verbatim.
 
 | Excuse | Reality |
 |--------|---------|
@@ -52,11 +60,11 @@ Each match then runs **Jira greenfield mode** as its own parallel task. Give eve
 | "The user did not type the exact token `jira-tasks`" | The trigger table includes the unhyphenated, English, and Spanish phrases. |
 | "The bug queue is empty, so run the file" | Empty means stop and report. No substitute work. |
 | "Include other statuses, or the Ready to do story, so agents are not idle" | The JQL is exact. Do not widen type or status. |
-| "Resume yesterday's ticket because its worktree already exists" | Queue mode starts only the search results, each as a new greenfield pipeline. |
+| "Resume yesterday's ticket because its worktree already exists" | Queue mode starts only the search results, each in its applicable planning mode. |
 
-## Jira greenfield mode (mandatory when a Jira ticket is mentioned)
+## Jira greenfield mode (mandatory for Jira outside source self-maintenance)
 
-If the user mentions a Jira ticket, treat it as a **brand-new feature** and build everything from scratch. The ticket is the only source of truth for scope.
+Outside source self-maintenance, if the user mentions a Jira ticket, treat it as a **brand-new feature** and build everything from scratch. The ticket is the only source of truth for scope.
 
 **Do:**
 
@@ -102,7 +110,7 @@ For **each** task, in its own worktree:
 | 2 | `enrich-us` | Enrich ticket/story; output **Original** + **Enhanced**. In **Enhanced**, list affected canonical docs (`docs/api-spec.yml`, `docs/data-model.md`) when routes, JSON, or schema change, and add the `### E2E test cases (Playwright)` list when the story changes frontend behavior. Step 2 is done only once `tmp/enriched-us/<change-name>.md` exists on disk — see **Step 4 gate** |
 | 3 | `openspec-new-change` | `openspec new change "<name>"` — scaffold only |
 | 4 | `openspec-ff-change` | Create all artifacts until `applyRequires` satisfied (see **Step 4 gate** below) |
-| 5 | `openspec-apply-change` | Implement every checkbox in `tasks.md` including §8–§16 mandatory steps (see **Step 5 gate** below) |
+| 5 | `openspec-apply-change` | Implement every implementation checkbox in `tasks.md` including applicable mandatory steps (see **Step 5 gate** below) |
 | 6 | `adversarial-review` | Different subagent than the implementer. Required before every verify (see **Adversarial review before verify**) |
 | 7 | `openspec-verify-change` | Verify completeness/correctness/coherence; write verification report. Then follow **Execution mode** |
 
@@ -145,7 +153,7 @@ These phrases are a mode flag, not a change name, not a Jira key, and not a task
 
 Read the latest `openspec-verify-change` report. Exit when every item below is true:
 
-- **Completeness:** every `tasks.md` checkbox is `[x]`. An open checkbox is CRITICAL. Completeness includes the test tasks: §9 automated tests, §10 manual endpoint checks, and §11 Playwright suite run when the change touches UI. A test checkbox is `[x]` only when that run finished with no errors. A failed command, a non-success response, or a skipped run leaves the task open.
+- **Completeness:** every implementation checkbox in `tasks.md` is `[x]`. An open implementation checkbox is CRITICAL. In source self-maintenance, acceptance gates in `acceptance.md` are outside apply completeness; applicable tests follow the affected-surface profile. For customer mode, completeness includes §9 automated tests, §10 manual endpoint checks, and §11 Playwright suite when UI changes. A test checkbox is `[x]` only when that run finished with no errors. A failed command, a non-success response, or a skipped run leaves the task open.
 - **Other CRITICAL issues** are also zero. In `/verify`, CRITICAL means incomplete tasks and requirement implementations that were not found.
 - **WARNING and SUGGESTION may remain.** Scenario gaps, spec or design divergence, and pattern notes do not start another iteration and do not block the exit.
 
@@ -167,7 +175,7 @@ If the new report lists the same CRITICAL issues as the previous one and the ite
 
 When this task has a Jira ticket **and** verification completed satisfactorily, move that issue to **In review**. Do this before the final summary. Do not wait for the user to ask. Do not run `commit` to get a status change.
 
-**Satisfactory verification** means the latest `openspec-verify-change` report meets **Loop exit** (every `tasks.md` checkbox `[x]`, zero CRITICAL). WARNING and SUGGESTION may remain.
+**Satisfactory verification** means the latest `openspec-verify-change` report meets **Loop exit** (every implementation `tasks.md` checkbox `[x]`, zero CRITICAL). WARNING and SUGGESTION may remain.
 
 **Do transition when:**
 
@@ -177,7 +185,7 @@ When this task has a Jira ticket **and** verification completed satisfactorily, 
 **Do not transition when:**
 
 - The task has no Jira ticket (`Jira id: none`).
-- CRITICAL issues remain, any `tasks.md` checkbox is open, or the loop stopped on a repeated-CRITICAL blocker.
+- CRITICAL issues remain, any implementation `tasks.md` checkbox is open, or the loop stopped on a repeated-CRITICAL blocker.
 - Search, apply, adversarial-review, or a mid-loop verify just finished. Status stays unchanged until the exit condition holds.
 - The target status would be `Done`. This skill never moves an issue to Done. `commit` owns that transition.
 
@@ -223,12 +231,12 @@ Steps 2 and 4 (`enrich-us`, `openspec-ff-change`) require **Opus high reasoning*
 
 ## Step 4 gate (`openspec-ff-change` — tasks artifact)
 
-Before marking the **tasks** artifact done:
+For source self-maintenance, use the affected-surface profile and implementation-only tasks specified above; keep gates in acceptance.md. For all tasks, before marking the **tasks** artifact done:
 
 1. Confirm `tmp/enriched-us/<change-name>.md` exists on disk before treating step 2 (`enrich-us`) as done. If it does not exist, step 2 is not complete — go back and have `enrich-us` write it before continuing to step 3/4.
-2. Run `openspec instructions tasks --change "<name>"` and confirm `<rules>` includes mandatory sections (if not, fix `openspec/config.yaml` first).
-3. Read `docs/openspec-tasks-mandatory-steps.md` (§6 portal reuse, §7 example structure).
-4. Write `tasks.md` with §0, feature work, then **§8–§16** (unit tests, curl, E2E if UI, **§16 documentation**).
+2. Run `openspec instructions tasks --change "<name>"` and confirm `<rules>` includes mandatory sections (if not, fix `openspec/config.yaml` first; if the CLI is unavailable, report the blocker rather than claim this gate passed).
+3. Read `docs/openspec-tasks-mandatory-steps.md` (source profile when applicable; otherwise §6 portal reuse, §7 example structure).
+4. Write `tasks.md` with setup, feature work, and applicable verification/documentation tasks. Customer mode uses **§8–§16**; source self-maintenance uses the repository profile and separate acceptance gates.
 5. **Portal UI:** include §6 portal component reuse from mandatory-steps before build tasks; design must map controls to a component family and named partials (see `frontend-standards.md` taxonomy).
 6. If the change adds or changes JSON routes, §16 MUST include explicit checkboxes for `docs/api-spec.yml` (and `docs/data-model.md` when schema changes).
 7. Run `openspec validate <change-name> --strict` after `tasks.md` is written.
@@ -237,7 +245,7 @@ Do not use only the generic CLI tasks template (Setup / Core Implementation) wit
 
 ## Step 5 gate (`openspec-apply-change`)
 
-Implement code **and** complete mandatory sections in order. Do not mark a mandatory checkbox `[x]` until its deliverable exists:
+Implement code **and** complete applicable mandatory sections in order. The table below is the customer profile; source self-maintenance uses actual affected-surface evidence and explicit N/A reasons instead. Do not mark a mandatory checkbox `[x]` until its deliverable exists:
 
 | Section | Deliverable before `[x]` |
 |---------|---------------------------|
@@ -286,12 +294,12 @@ After all tasks finish, summarize the queue first when a keyword was used: mode,
 - Treating those phrases as a change name, or ignoring them and looping anyway
 - Starting another iteration to clear WARNING or SUGGESTION issues
 - Marking §9, §10, or §11 `[x]` when the test run failed, returned an error, or was skipped
-- Calling completeness done while any checkbox is still open
+- Calling implementation completeness done while any implementation checkbox is still open
 - Verifying before `adversarial-review` returns, or letting the implementer perform that review
 - Omitting the Jira id, inferring it from the branch, or inventing one when the task has no ticket
 - Re-verifying a loop iteration without a new adversarial-review subagent
 - Leaving a Jira ticket in `Ready to do` (or any non-review status) after satisfactory verification
-- Moving a Jira ticket to `In review` while CRITICAL issues remain or checkboxes are open
+- Moving a Jira ticket to `In review` while CRITICAL issues remain or implementation checkboxes are open
 - Moving a Jira ticket to `Done` from this skill
 - Picking a substitute Jira status when `In review` is missing from the transitions
 
